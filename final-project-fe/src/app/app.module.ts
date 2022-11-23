@@ -12,6 +12,7 @@ import { HomePage } from './pages/home/home.page';
 import { AddAnnouncementPage } from './pages/add-announcement/add-announcement.page';
 import { AnnouncementPage } from './pages/announcement/announcement.page';
 import { AuthModule } from './auth/auth.module';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { AuthModule } from './auth/auth.module';
     HomePage,
     AddAnnouncementPage,
     AnnouncementPage,
+    SearchBarComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, AuthModule],
   providers: [],
