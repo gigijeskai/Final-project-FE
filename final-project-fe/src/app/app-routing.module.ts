@@ -17,19 +17,19 @@ const routes: Routes = [
     component: HomePage,
   },
   {
-    path: 'announcement',
+    path: 'annunci',
     component: AnnouncementPage,
   },
   {
-    path: 'add-announcement',
+    path: 'pubblica-annuncio',
     component: AddAnnouncementPage,
   },
   {
-    path: 'login',
+    path: 'accedi',
     component: LoginPage,
   },
   {
-    path: 'register',
+    path: 'registrati',
     component: RegisterPage,
   },
 ];
