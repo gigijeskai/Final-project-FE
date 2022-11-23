@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
-
 import { AuthService } from '../auth.service';
 import { Router } from '@angular/router';
 
@@ -17,6 +16,6 @@ export class RegisterPage implements OnInit {
   onSubmit() {
     this.authService
       .signUp(this.form.value)
-      .subscribe((data) => this.router.navigate(['login']));
+      .subscribe((data) => this.router.navigate(['/login']));
   }
 }

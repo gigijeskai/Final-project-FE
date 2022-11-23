@@ -9,6 +9,6 @@ import { environment } from 'src/environments/environment';
 export class AuthService {
   constructor(private http: HttpClient) {}
   signUp(user: User) {
-    return this.http.post(environment.urlAPI + 'registrati', user);
+    return this.http.post(environment.urlAPI + 'register', user);
   }
 }

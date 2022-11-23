@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RegisterPage } from './register/register.page';
 import { LoginPage } from './login/login.page';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { RegisterPage } from './register/register.page';
 
 const routes: Routes = [
   {

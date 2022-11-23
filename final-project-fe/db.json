@@ -6,21 +6,32 @@
       "firstname": "Mario",
       "lastname": "Rossi",
       "age": "24",
-      "citta":"roma",
+      "citta": "roma",
       "id": 1
+    },
+    {
+      "email": "prova@gmail.com",
+      "password": "$2a$10$XSev2BSZPOIDeWxgqctyPujYnImzRHqGHJWysHEgEHd5o8k5uaBaK",
+      "firstname": "Luigi",
+      "lastname": "Indaco",
+      "age": "26",
+      "citta": "Latina",
+      "roles": "",
+      "id": 2
     }
   ],
-  "annunci":[
-   { "passeggeri":"5",
-  "cambio":"manuale",
-  "alimentazione":"diesel",
-  "Consumo/km":"4",
-  "città":"roma",
-  "prezzo":"45",
-  "marca":"bmw",
-  "modello":"320d",
-  "categoria":"berlina",
-  "anno":"2016"
-}]
+  "annunci": [
+    {
+      "passeggeri": "5",
+      "cambio": "manuale",
+      "alimentazione": "diesel",
+      "Consumo/km": "4",
+      "città": "roma",
+      "prezzo": "45",
+      "marca": "bmw",
+      "modello": "320d",
+      "categoria": "berlina",
+      "anno": "2016"
+    }
+  ]
 }
-
