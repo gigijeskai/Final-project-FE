@@ -29,7 +29,7 @@ const routes: Routes = [
     component: LoginPage,
   },
   {
-    path: 'sign-up',
+    path: 'register',
     component: RegisterPage,
   },
 ];
