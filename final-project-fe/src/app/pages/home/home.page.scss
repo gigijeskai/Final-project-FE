@@ -1,8 +1,16 @@
 .container-fluid{
   background-image: url(../../../assets/images/pexels-matheus-bertelli-799443.jpg);
-  height: 50rem;
+
   background-repeat: no-repeat;
-  background-position-y: -541px;
+  background-position-y: -40rem;
   background-size: cover;
   width: 100%;
+  position: static;
+}
+h1{    color: white;
+  font-size: xxx-large;
+  font-weight: bold;
+  line-height: 5rem;
+  padding-block: 5rem;
+  padding-inline: 1rem;
 }
