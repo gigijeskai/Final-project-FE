@@ -24,14 +24,6 @@ const routes: Routes = [
     path: 'pubblica-annuncio',
     component: AddAnnouncementPage,
   },
-  {
-    path: 'accedi',
-    component: LoginPage,
-  },
-  {
-    path: 'registrati',
-    component: RegisterPage,
-  },
 ];
 
 @NgModule({
