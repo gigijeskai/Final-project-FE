@@ -2,7 +2,7 @@ export interface Annunci {
   passeggeri: '5';
   cambio: 'manuale';
   alimentazione: 'diesel';
-  'Consumo/km': '4';
+  Consumokm: '4';
   città: 'roma';
   prezzo: '45';
   marca: 'bmw';

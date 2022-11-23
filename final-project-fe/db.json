@@ -18,6 +18,26 @@
       "citta": "Latina",
       "roles": "",
       "id": 2
+    },
+    {
+      "email": "prova1@gmail.com",
+      "password": "$2a$10$CmTQOrreeVNKmLhR1uE/YerjvLlsN1QzAe4tkeGrZ.ZT9guVef0ce",
+      "firstname": "Luigi",
+      "lastname": "Indaco",
+      "age": "26",
+      "citta": "Latina",
+      "roles": "",
+      "id": 3
+    },
+    {
+      "email": "prova2@gmail.com",
+      "password": "$2a$10$tyZptSJnbACtdDks7ecx5OPX0CjACCrXZeXc7oZiS4hc75mX1X1Fa",
+      "firstname": "Luigi",
+      "lastname": "Indaco",
+      "age": "26",
+      "citta": "Latina",
+      "roles": "",
+      "id": 4
     }
   ],
   "annunci": [

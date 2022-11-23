@@ -14,8 +14,8 @@ export class RegisterPage implements OnInit {
 
   ngOnInit(): void {}
   onSubmit() {
-    this.authService
-      .signUp(this.form.value)
-      .subscribe((data) => this.router.navigate(['/login']));
+    this.authService.signUp(this.form.value).subscribe((data) => {
+      this.router.navigate(['/accedi']);
+    });
   }
 }
