@@ -1,57 +1,110 @@
 <div class="container">
-  <form class="row g-3">
+  <form class="row g-3" #newAnnouncement="ngForm" (ngSubmit)="onSubmit()">
     <div class="col-md-6">
       <label for="passeggeri" class="form-label">Passeggeri</label>
-      <input type="text" class="form-control" id="passeggeri" />
+      <input
+        type="text"
+        class="form-control"
+        id="passeggeri"
+        name="passeggeri"
+        ngModel
+      />
     </div>
     <div class="col-md-6">
       <label for="cambio" class="form-label">Cambio</label>
-      <input type="text" class="form-control" id="cambio" />
+      <input
+        type="text"
+        class="form-control"
+        id="cambio"
+        name="cambio"
+        ngModel
+      />
     </div>
     <div class="col-md-6">
       <label for="alimentazione" class="form-label">Alimentazione</label>
-      <input type="text" class="form-control" id="alimentazione" />
+      <input
+        type="text"
+        class="form-control"
+        id="alimentazione"
+        name="alimentazione"
+        ngModel
+      />
     </div>
     <div class="col-md-6">
       <label for="consumo" class="form-label">Consumo/km</label>
-      <input type="text" class="form-control" id="consumo" />
+      <input
+        type="text"
+        class="form-control"
+        id="consumo"
+        name="consumokm"
+        ngModel
+      />
     </div>
     <div class="col-md-6">
       <label for="citta" class="form-label">Città</label>
-      <input type="text" class="form-control" id="citta" />
+      <input type="text" class="form-control" id="citta" name="citta" ngModel />
     </div>
     <div class="col-md-6">
       <label for="prezzo" class="form-label">Prezzo richiesto</label>
-      <input type="text" class="form-control" id="prezzo" />
+      <input
+        type="text"
+        class="form-control"
+        id="prezzo"
+        name="prezzo"
+        ngModel
+      />
     </div>
     <div class="col-md-6">
       <label for="marca" class="form-label">Marca</label>
-      <input type="text" class="form-control" id="marca" />
+      <input type="text" class="form-control" id="marca" name="marca" ngModel />
     </div>
     <div class="col-md-6">
       <label for="modello" class="form-label">Modello</label>
-      <input type="text" class="form-control" id="modello" />
+      <input
+        type="text"
+        class="form-control"
+        id="modello"
+        name="modello"
+        ngModel
+      />
     </div>
     <div class="col-md-6">
       <label for="categoria" class="form-label">Categoria</label>
-      <input type="text" class="form-control" id="categoria" />
+      <input
+        type="text"
+        class="form-control"
+        id="categoria"
+        name="categoria"
+        ngModel
+      />
+    </div>
+    <div class="col-md-6">
+      <label for="bagagliaio" class="form-label">Capacità bagagliaio</label>
+      <input
+        type="text"
+        class="form-control"
+        id="bagagliaio"
+        name="bagagliaio"
+        ngModel
+      />
     </div>
     <div class="col-md-6">
       <label for="anno" class="form-label">Anno</label>
-      <input type="text" class="form-control" id="anno" />
+      <input type="text" class="form-control" id="anno" name="anno" ngModel />
     </div>
     <div class="col-md-6">
-      <label for="immagini" class="form-label">Aggiungi Immagini</label>
+      <label for="immagini" class="form-label">Aggiungi URL immagine</label>
       <input
-        type="file"
+        type="text"
         class="form-control"
         id="immagini"
-        accept="image/png, image/jpeg"
+        name="immagini"
+        ngModel
       />
     </div>
 
     <div class="col-12">
-      <button type="submit" class="btn btn-primary">Registrati</button>
+      <button type="submit" class="btn btn-primary">Pubblica annuncio</button>
     </div>
   </form>
 </div>

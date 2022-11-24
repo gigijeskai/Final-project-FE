@@ -22,7 +22,9 @@
       "modello": "320d",
       "categoria": "berlina",
       "anno": "2016",
-      "bagagliaio": "300"
+      "bagagliaio": "300",
+      "immagini": "https://auto1-homepage.prod.mp.auto1.cloud/static/optimized/blue-car-hp-left-bmw.png",
+      "id": 1
     },
     {
       "passeggeri": "5",
@@ -35,7 +37,38 @@
       "modello": "320d",
       "categoria": "berlina",
       "anno": "2016",
-      "bagagliaio": "300"
+      "bagagliaio": "300",
+      "immagini": "https://auto1-homepage.prod.mp.auto1.cloud/static/optimized/blue-car-hp-left-bmw.png",
+      "id": 2
+    },
+    {
+      "passeggeri": "4",
+      "cambio": "manuale",
+      "alimentazione": "benzina",
+      "consumokm": "5",
+      "citta": "Latina",
+      "prezzo": "30",
+      "marca": "fiat",
+      "modello": "500",
+      "categoria": "citycar",
+      "anno": "2016",
+      "immagini": "https://images.hertz.com/vehicles/220x128/ZEITMXMR999.jpg",
+      "id": 3
+    },
+    {
+      "passeggeri": "5",
+      "cambio": "automatico",
+      "alimentazione": "elettrica",
+      "consumokm": "0",
+      "citta": "milano",
+      "prezzo": "60",
+      "marca": "lync co",
+      "modello": "01",
+      "categoria": "suv",
+      "bagagliaio": "500",
+      "anno": "2022",
+      "immagini": "https://images.hertz.com/vehicles/220x128/ZEITSGAI999.jpg",
+      "id": 4
     }
   ]
 }

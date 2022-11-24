@@ -5,12 +5,8 @@
       class="col-md-6 col-lg-6 col-12"
       *ngFor="let item of announcementSrv.announcements"
     >
-      <div class="card">
-        <img
-          src="https://auto1-homepage.prod.mp.auto1.cloud/static/optimized/blue-car-hp-left-bmw.png"
-          class="card-img-top"
-          alt="bmw 320d"
-        />
+      <div class="card my-3">
+        <img src="{{item.immagini}}" class="card-img-top" alt="bmw 320d" />
         <div class="card-body">
           <h6 class="card-title">
             {{item.marca}} {{item.modello}} {{item.categoria}}

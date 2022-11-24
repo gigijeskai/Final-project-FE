@@ -10,4 +10,6 @@ export interface Announcement {
   categoria: string;
   anno: string;
   bagagliaio: string;
+  id: number;
+  immagini: string;
 }
