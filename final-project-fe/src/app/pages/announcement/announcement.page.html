@@ -1,30 +1,46 @@
 <div class="container">
   <app-search-bar></app-search-bar>
   <div class="row">
-    <div class="col-md-6 col-lg-6 col-12">
+    <div
+      class="col-md-6 col-lg-6 col-12"
+      *ngFor="let item of announcementSrv.announcements"
+    >
       <div class="card">
         <img
           src="https://auto1-homepage.prod.mp.auto1.cloud/static/optimized/blue-car-hp-left-bmw.png"
           class="card-img-top"
-          alt="..."
+          alt="bmw 320d"
         />
         <div class="card-body">
-          <h6 class="card-title">nome auto e tipologia</h6>
+          <h6 class="card-title">
+            {{item.marca}} {{item.modello}} {{item.categoria}}
+          </h6>
           <hr />
           <p class="d-flex justify-content-between">
-            <img
-              src="//images.hertz.com/content/dam/irac/Overlay/icons/person.png"
-            /><img
-              src="//images.hertz.com/content/dam/irac/Overlay/icons/feature_suitcase.png"
-            /><img
-              src="//images.hertz.com/content/dam/irac/Overlay/icons/feature_transmission.png"
-            /><img
-              src="//images.hertz.com/content/dam/irac/Overlay/icons/feature_fuel.png"
-            />
+            <span>
+              <img
+                src="//images.hertz.com/content/dam/irac/Overlay/icons/person.png"
+              />{{ item.passeggeri}}</span
+            >
+            <span
+              ><img
+                src="//images.hertz.com/content/dam/irac/Overlay/icons/feature_suitcase.png"
+              />{{item.bagagliaio}}L</span
+            >
+            <span
+              ><img
+                src="//images.hertz.com/content/dam/irac/Overlay/icons/feature_transmission.png"
+              />{{item.cambio}}</span
+            >
+            <span
+              ><img
+                src="//images.hertz.com/content/dam/irac/Overlay/icons/feature_fuel.png"
+              />{{item.consumokm}}</span
+            >
           </p>
           <hr />
           <p>Dettagli</p>
-          <p>Prezzo</p>
+          <p>Prezzo: {{item.prezzo}}€</p>
           <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>

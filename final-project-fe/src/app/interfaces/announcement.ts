@@ -1,12 +1,13 @@
 export interface Announcement {
-  passeggeri: '5';
-  cambio: 'manuale';
-  alimentazione: 'diesel';
-  Consumokm: '4';
-  città: 'roma';
-  prezzo: '45';
-  marca: 'bmw';
-  modello: '320d';
-  categoria: 'berlina';
-  anno: '2016';
+  passeggeri: string;
+  cambio: string;
+  alimentazione: string;
+  consumokm: string;
+  città: string;
+  prezzo: string;
+  marca: string;
+  modello: string;
+  categoria: string;
+  anno: string;
+  bagagliaio: string;
 }

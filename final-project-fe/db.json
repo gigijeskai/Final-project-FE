@@ -15,13 +15,27 @@
       "passeggeri": "5",
       "cambio": "manuale",
       "alimentazione": "diesel",
-      "Consumo/km": "4",
+      "consumokm": "4",
       "città": "roma",
       "prezzo": "45",
       "marca": "bmw",
       "modello": "320d",
       "categoria": "berlina",
-      "anno": "2016"
+      "anno": "2016",
+      "bagagliaio": "300"
+    },
+    {
+      "passeggeri": "5",
+      "cambio": "manuale",
+      "alimentazione": "diesel",
+      "consumokm": "4",
+      "città": "roma",
+      "prezzo": "45",
+      "marca": "bmw",
+      "modello": "320d",
+      "categoria": "berlina",
+      "anno": "2016",
+      "bagagliaio": "300"
     }
   ]
 }
