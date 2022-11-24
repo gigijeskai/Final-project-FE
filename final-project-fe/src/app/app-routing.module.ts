@@ -11,10 +11,6 @@ const routes: Routes = [
     redirectTo: 'home',
   },
   {
-    path: 'home',
-    component: HomePage,
-  },
-  {
     path: 'annunci',
     component: AnnouncementPage,
   },

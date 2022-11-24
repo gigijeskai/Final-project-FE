@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { AuthService } from '../auth.service';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   templateUrl: './login.page.html',
@@ -8,7 +8,7 @@ import { AuthService } from '../auth.service';
 })
 export class LoginPage implements OnInit {
   @ViewChild('f') form!: NgForm;
-  constructor(private authSerice: AuthService) {}
+  constructor(private authService: AuthService) {}
 
   ngOnInit(): void {}
 
