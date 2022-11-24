@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ComponentsModule } from './components/components.module';
 import { AddAnnouncementModule } from './pages/add-announcement/add-announcement.module';
 import { AnnouncementModule } from './pages/announcement/announcement.module';
+import { HomeModule } from './pages/home/home.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -25,6 +26,7 @@ import { AnnouncementModule } from './pages/announcement/announcement.module';
     ComponentsModule,
     AddAnnouncementModule,
     AnnouncementModule,
+    HomeModule,
   ],
 })
 export class AppModule {}

@@ -5,7 +5,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HomePage } from '../pages/home/home.page';
-import { AnnouncementModule } from '../pages/announcement/announcement.module';
 
 const routes: Routes = [
   {
