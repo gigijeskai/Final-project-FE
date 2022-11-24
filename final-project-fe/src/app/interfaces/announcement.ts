@@ -1,4 +1,4 @@
-export interface Annunci {
+export interface Announcement {
   passeggeri: '5';
   cambio: 'manuale';
   alimentazione: 'diesel';
