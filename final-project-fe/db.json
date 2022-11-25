@@ -69,6 +69,21 @@
       "anno": "2022",
       "immagini": "https://images.hertz.com/vehicles/220x128/ZEITSGAI999.jpg",
       "id": 4
+    },
+    {
+      "passeggeri": "5",
+      "cambio": "manuale",
+      "alimentazione": "benzina",
+      "consumokm": "5",
+      "citta": "Latina",
+      "prezzo": "30",
+      "marca": "fiat",
+      "modello": "panda",
+      "categoria": "citycar",
+      "bagagliaio": "200",
+      "anno": "2022",
+      "immagini": "https://images.hertz.com/vehicles/220x128/ZEITEBMR999.jpg",
+      "id": 5
     }
   ]
 }
