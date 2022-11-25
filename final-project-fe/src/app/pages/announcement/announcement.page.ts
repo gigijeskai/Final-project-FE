@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Announcement } from 'src/app/interfaces/announcement';
 import { AnnouncementService } from 'src/app/services/announcementSrv';
 
 @Component({
@@ -6,11 +7,12 @@ import { AnnouncementService } from 'src/app/services/announcementSrv';
   styleUrls: ['./announcement.page.scss'],
 })
 export class AnnouncementPage implements OnInit {
-  constructor(public announcementSrv: AnnouncementService) {}
-
+  constructor(private announcementSrv: AnnouncementService) {}
+  announcements?: Announcement[];
   ngOnInit(): void {
-    this.announcementSrv
-      .getAnnouncement()
-      .subscribe((data) => (this.announcementSrv.announcements = data));
+    this.announcementSrv.getAnnouncement().subscribe((data) => {
+      this.announcementSrv.announcements = data;
+      this.announcements = data;
+    });
   }
 }

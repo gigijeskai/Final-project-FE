@@ -8,7 +8,7 @@ import { AnnouncementService } from 'src/app/services/announcementSrv';
 })
 export class AddAnnouncementPage implements OnInit {
   @ViewChild('newAnnouncement') form!: NgForm;
-  constructor(public announcementSrv: AnnouncementService) {}
+  constructor(private announcementSrv: AnnouncementService) {}
 
   ngOnInit(): void {}
   onSubmit() {
