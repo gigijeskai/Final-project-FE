@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddAnnouncementPage } from './pages/add-announcement/add-announcement.page';
 import { AnnouncementPage } from './pages/announcement/announcement.page';
 import { HomePage } from './pages/home/home.page';
+import { UsatoPage } from './pages/usato/usato.page';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'pubblica-annuncio',
     component: AddAnnouncementPage,
+  },
+  {
+    path: 'usato',
+    component: UsatoPage,
   },
 ];
 

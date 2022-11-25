@@ -10,6 +10,7 @@ import { ComponentsModule } from './components/components.module';
 import { AddAnnouncementModule } from './pages/add-announcement/add-announcement.module';
 import { AnnouncementModule } from './pages/announcement/announcement.module';
 import { HomeModule } from './pages/home/home.module';
+import { UsatoModule } from './pages/usato/usato.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -27,6 +28,7 @@ import { HomeModule } from './pages/home/home.module';
     AddAnnouncementModule,
     AnnouncementModule,
     HomeModule,
+    UsatoModule,
   ],
 })
 export class AppModule {}
