@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Usato } from 'src/app/interfaces/usato';
 
 import { UsedCarApiService } from 'src/app/services/used-car-api.service';
 
@@ -7,10 +8,12 @@ import { UsedCarApiService } from 'src/app/services/used-car-api.service';
   styleUrls: ['./usato.page.scss'],
 })
 export class UsatoPage implements OnInit {
-  carList = [];
+  carList!: Usato[];
   constructor(private usedCarApiService: UsedCarApiService) {}
 
   ngOnInit(): void {
-    this.usedCarApiService.getAllCar().subscribe((data) => console.log(data));
+    this.usedCarApiService
+      .getAllCar()
+      .subscribe((data: Usato[]) => (this.carList = data));
   }
 }

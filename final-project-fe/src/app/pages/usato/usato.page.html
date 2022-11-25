@@ -1,12 +1,16 @@
 <div class="container">
   <app-search-bar></app-search-bar>
   <div class="row">
-    <div class="col-md-6 col-lg-6 col-12">
+    <div class="col-md-6 col-lg-6 col-12" *ngFor="let item of this.carList">
       <div class="card my-3">
-        <img src="" class="card-img-top" alt="" />
+        <img
+          src="{{item.immagini}}"
+          class="card-img-top"
+          alt="{{item.marca}}{{item.modello}}"
+        />
         <div class="card-body">
           <h6 class="card-title">
-            <!-- {{item.marca}} {{item.modello}} {{item.categoria}} -->
+            {{item.marca}} {{item.modello}} {{item.categoria}}
           </h6>
           <hr />
           <p class="d-flex justify-content-between">
@@ -35,4 +39,5 @@
       </div>
     </div>
   </div>
+  <h1>{{this.carList | json}}</h1>
 </div>
