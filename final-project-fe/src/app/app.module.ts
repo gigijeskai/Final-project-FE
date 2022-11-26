@@ -11,6 +11,7 @@ import { AddAnnouncementModule } from './pages/add-announcement/add-announcement
 import { AnnouncementModule } from './pages/announcement/announcement.module';
 import { HomeModule } from './pages/home/home.module';
 import { UsatoModule } from './pages/usato/usato.module';
+import { ModalModule } from './modal/modal.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -29,6 +30,7 @@ import { UsatoModule } from './pages/usato/usato.module';
     AnnouncementModule,
     HomeModule,
     UsatoModule,
+    ModalModule,
   ],
 })
 export class AppModule {}
