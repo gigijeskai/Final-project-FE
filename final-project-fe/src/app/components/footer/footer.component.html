@@ -2,29 +2,41 @@
   <div class="container py-5">
     <div class="row d-flex justify-content-evenly">
       <div class="col-6 col-md-2">
-        <h5>Accedi</h5>
+        <h5
+          class="footer-route"
+          [routerLink]="['/accedi']"
+          routerLinkActive="router-link-active"
+        >
+          Accedi
+        </h5>
       </div>
 
       <div class="col-6 col-md-2">
-        <h5>Registrati</h5>
+        <h5
+          class="footer-route"
+          [routerLink]="['/registrati']"
+          routerLinkActive="router-link-active"
+        >
+          Registrati
+        </h5>
       </div>
 
       <div class="col-6 col-md-2">
-        <h5>Chi siamo</h5>
+        <h5 class="footer-route">Chi siamo</h5>
       </div>
       <div class="col-6 col-md-2">
-        <h5>Contatti</h5>
+        <h5 class="footer-route">Contatti</h5>
       </div>
       <div class="col-6 col-md-2">
-        <h5>
-          <i class="bi bi-instagram pe-2"></i><i class="bi bi-twitter pe-2"></i
+        <h5 class="footer-route">
+          <i class="bi bi-instagram pe-2"> </i><i class="bi bi-twitter pe-2"></i
           ><i class="bi bi-youtube"></i>
         </h5>
       </div>
     </div>
   </div>
 
-  <footer class="">
+  <footer>
     <div
       class="d-flex flex-column flex-sm-row justify-content-between py-4 border-top border-secondary"
     >
