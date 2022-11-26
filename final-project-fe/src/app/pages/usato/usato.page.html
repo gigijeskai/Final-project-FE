@@ -32,12 +32,22 @@
             /></span>
           </p>
           <hr />
-          <p>Dettagli</p>
-          <p>Prezzo:</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <p>Prezzo: {{item.prezzo}}€</p>
+
+          <div class="col d-flex justify-content-around">
+            <a href="#" class="btn btn-primary">Acquista</a>
+            <a
+              href="#"
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#modal-car-sell"
+              >Dettagli</a
+            >
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <h1>{{this.carList | json}}</h1>
 </div>
+<app-dettagli-auto-vendita></app-dettagli-auto-vendita>

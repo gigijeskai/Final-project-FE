@@ -11,9 +11,10 @@ export class DettagliAutoNoleggioComponent implements OnInit {
   constructor(private announcementSrv: AnnouncementService) {}
   announcements?: Announcement[];
   ngOnInit(): void {
-    this.announcementSrv.getAnnouncement().subscribe((data) => {
-      this.announcementSrv.announcements = data;
-      this.announcements = data;
-    });
+    // this.announcementSrv
+    //   .getAnnouncementById()
+    //   .subscribe((obj: Announcement[]) => {
+    //     this.announcementSrv.announcements = obj;
+    //   });
   }
 }

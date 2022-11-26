@@ -12,6 +12,9 @@ export class AnnouncementService {
   getAnnouncement() {
     return this.http.get<Announcement[]>(environment.urlAPI + 'annunci');
   }
+  getAnnouncementById(id: number) {
+    return this.http.get<Announcement[]>(environment.urlAPI + 'annunci/' + id);
+  }
   addAnnouncement(announcement: Announcement) {
     return this.http.post<Announcement>(
       environment.urlAPI + 'annunci',
