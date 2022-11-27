@@ -9,12 +9,6 @@ import { AnnouncementService } from 'src/app/services/announcementSrv';
 })
 export class DettagliAutoNoleggioComponent implements OnInit {
   constructor(private announcementSrv: AnnouncementService) {}
-  announcements?: Announcement[];
-  ngOnInit(): void {
-    // this.announcementSrv
-    //   .getAnnouncementById()
-    //   .subscribe((obj: Announcement[]) => {
-    //     this.announcementSrv.announcements = obj;
-    //   });
-  }
+
+  ngOnInit(): void {}
 }
