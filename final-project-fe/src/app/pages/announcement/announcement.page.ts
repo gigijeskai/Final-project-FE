@@ -16,4 +16,9 @@ export class AnnouncementPage implements OnInit {
       this.announcements = data;
     });
   }
+  onDetails(id: number) {
+    this.announcementSrv
+      .getAnnouncementById(id)
+      .subscribe((obj) => (this.announcementSrv.announcements = obj));
+  }
 }
