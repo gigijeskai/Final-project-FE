@@ -54,4 +54,7 @@
     </div>
   </div>
 </div>
-<app-dettagli-auto-noleggio></app-dettagli-auto-noleggio>
+{{ this.carDetails | json }}
+<app-dettagli-auto-noleggio
+  [dettagliAuto]="carDetails"
+></app-dettagli-auto-noleggio>

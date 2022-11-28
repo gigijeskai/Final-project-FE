@@ -8,7 +8,7 @@ import { Announcement } from '../interfaces/announcement';
 })
 export class AnnouncementService {
   announcements?: Announcement[];
-
+  carDetails?: Announcement[];
   constructor(private http: HttpClient) {}
   getAnnouncement() {
     return this.http.get<Announcement[]>(environment.urlAPI + 'annunci');

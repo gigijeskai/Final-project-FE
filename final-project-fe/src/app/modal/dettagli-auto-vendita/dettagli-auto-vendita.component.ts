@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Announcement } from 'src/app/interfaces/announcement';
 import { AnnouncementService } from 'src/app/services/announcementSrv';
 
@@ -9,11 +9,6 @@ import { AnnouncementService } from 'src/app/services/announcementSrv';
 })
 export class DettagliAutoVenditaComponent implements OnInit {
   constructor(private announcementSrv: AnnouncementService) {}
-  announcements?: Announcement[];
-  ngOnInit(): void {
-    this.announcementSrv.getAnnouncement().subscribe((data) => {
-      this.announcementSrv.announcements = data;
-      this.announcements = data;
-    });
-  }
+
+  ngOnInit(): void {}
 }

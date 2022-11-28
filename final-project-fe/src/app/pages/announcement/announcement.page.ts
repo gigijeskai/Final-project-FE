@@ -9,6 +9,7 @@ import { AnnouncementService } from 'src/app/services/announcementSrv';
 export class AnnouncementPage implements OnInit {
   constructor(private announcementSrv: AnnouncementService) {}
   announcements?: Announcement[];
+  carDetails?: Announcement[];
 
   ngOnInit(): void {
     this.announcementSrv.getAnnouncement().subscribe((data) => {
@@ -17,8 +18,9 @@ export class AnnouncementPage implements OnInit {
     });
   }
   onDetails(id: number) {
-    this.announcementSrv
-      .getAnnouncementById(id)
-      .subscribe((obj) => (this.announcementSrv.announcements = obj));
+    this.announcementSrv.getAnnouncementById(id).subscribe((obj) => {
+      this.announcementSrv.announcements = obj;
+      this.carDetails = obj;
+    });
   }
 }

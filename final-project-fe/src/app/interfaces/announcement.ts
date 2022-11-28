@@ -12,4 +12,5 @@ export interface Announcement {
   bagagliaio: string;
   id: number;
   immagini: string;
+  attiva: boolean;
 }

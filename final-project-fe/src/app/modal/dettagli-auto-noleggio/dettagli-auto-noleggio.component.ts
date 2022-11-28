@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Pipe } from '@angular/core';
 import { Announcement } from 'src/app/interfaces/announcement';
 import { AnnouncementService } from 'src/app/services/announcementSrv';
 
@@ -8,6 +8,8 @@ import { AnnouncementService } from 'src/app/services/announcementSrv';
   styleUrls: ['./dettagli-auto-noleggio.component.scss'],
 })
 export class DettagliAutoNoleggioComponent implements OnInit {
+  @Input() dettagliAuto?: Announcement[];
+
   constructor(private announcementSrv: AnnouncementService) {}
 
   ngOnInit(): void {}
