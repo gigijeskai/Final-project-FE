@@ -8,8 +8,7 @@ import { AnnouncementService } from 'src/app/services/announcementSrv';
   styleUrls: ['./dettagli-auto-noleggio.component.scss'],
 })
 export class DettagliAutoNoleggioComponent implements OnInit {
-  @Input() carDetail: any;
-  constructor() {}
+  constructor(private announcementSrv: AnnouncementService) {}
 
   ngOnInit(): void {}
 }
