@@ -9,6 +9,7 @@ import { AnnouncementService } from 'src/app/services/announcementSrv';
 export class AnnouncementPage implements OnInit {
   constructor(private announcementSrv: AnnouncementService) {}
   announcements?: Announcement[];
+  details?: Announcement;
 
   ngOnInit(): void {
     this.announcementSrv.getAnnouncement().subscribe((data) => {
