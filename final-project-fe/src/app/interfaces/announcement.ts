@@ -3,7 +3,7 @@ export interface Announcement {
   cambio: string;
   alimentazione: string;
   consumokm: string;
-  città: string;
+  citta: string;
   prezzo: string;
   marca: string;
   modello: string;

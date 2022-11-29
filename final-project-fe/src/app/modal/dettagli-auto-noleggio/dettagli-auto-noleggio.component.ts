@@ -1,5 +1,4 @@
 import { Component, Input, OnInit, Pipe } from '@angular/core';
-import { json } from 'express';
 import { Announcement } from 'src/app/interfaces/announcement';
 import { AnnouncementService } from 'src/app/services/announcementSrv';
 
@@ -9,13 +8,11 @@ import { AnnouncementService } from 'src/app/services/announcementSrv';
   styleUrls: ['./dettagli-auto-noleggio.component.scss'],
 })
 export class DettagliAutoNoleggioComponent implements OnInit {
-  @Input() dettagliAuto?: Announcement[];
+  @Input() dettagliAuto: Announcement | undefined;
 
   constructor(private announcementSrv: AnnouncementService) {}
 
   ngOnInit(): void {
-    this.announcementSrv
-      .getAnnouncement()
-      .subscribe((data) => (this.announcementSrv.carDetails = data));
+    console.log(this.dettagliAuto);
   }
 }
