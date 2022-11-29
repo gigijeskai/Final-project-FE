@@ -1,4 +1,5 @@
 import { Component, Input, OnInit, Pipe } from '@angular/core';
+import { json } from 'express';
 import { Announcement } from 'src/app/interfaces/announcement';
 import { AnnouncementService } from 'src/app/services/announcementSrv';
 
@@ -12,5 +13,9 @@ export class DettagliAutoNoleggioComponent implements OnInit {
 
   constructor(private announcementSrv: AnnouncementService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.announcementSrv
+      .getAnnouncement()
+      .subscribe((data) => (this.announcementSrv.carDetails = data));
+  }
 }

@@ -19,8 +19,8 @@ export class AnnouncementPage implements OnInit {
   }
   onDetails(id: number) {
     this.announcementSrv.getAnnouncementById(id).subscribe((obj) => {
-      this.announcementSrv.announcements = obj;
-      this.carDetails = obj;
+      this.announcementSrv.carDetails = obj;
     });
+    console.log(this.carDetails);
   }
 }
