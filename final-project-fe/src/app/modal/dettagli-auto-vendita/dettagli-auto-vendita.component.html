@@ -20,7 +20,26 @@
           aria-label="Close"
         ></button>
       </div>
-      <div class="modal-body"></div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col">
+            <img src="{{ dettagliAuto?.immagini }}" alt="" />
+            <ul>
+              <li>{{ dettagliAuto?.marca }}</li>
+              <li>{{ dettagliAuto?.modello }}</li>
+              <li>{{ dettagliAuto?.cambio }}</li>
+              <li>{{ dettagliAuto?.alimentazione }}</li>
+              <li>{{ dettagliAuto?.consumokm }}</li>
+              <li>{{ dettagliAuto?.categoria }}</li>
+              <li>{{ dettagliAuto?.bagagliaio }}</li>
+              <li>{{ dettagliAuto?.anno }}</li>
+              <li>{{ dettagliAuto?.citta }}</li>
+              <li>{{ dettagliAuto?.passeggeri }}</li>
+              <li>{{ dettagliAuto?.prezzo }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
           ok

@@ -9,11 +9,16 @@ import { UsedCarApiService } from 'src/app/services/used-car-api.service';
 })
 export class UsatoPage implements OnInit {
   carList!: Usato[];
+  carDetails?: Usato;
   constructor(private usedCarApiService: UsedCarApiService) {}
 
   ngOnInit(): void {
     this.usedCarApiService
       .getAllCar()
       .subscribe((data: Usato[]) => (this.carList = data));
+  }
+  onDetails(item: Usato) {
+    this.carDetails = item;
+    console.log(this.carDetails);
   }
 }
