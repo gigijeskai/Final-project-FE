@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Usato } from 'src/app/interfaces/usato';
-
 import { UsedCarApiService } from 'src/app/services/used-car-api.service';
 
 @Component({
@@ -10,6 +9,7 @@ import { UsedCarApiService } from 'src/app/services/used-car-api.service';
 export class UsatoPage implements OnInit {
   carList!: Usato[];
   carDetails?: Usato;
+  searchText: string = '';
   constructor(private usedCarApiService: UsedCarApiService) {}
 
   ngOnInit(): void {
@@ -20,5 +20,8 @@ export class UsatoPage implements OnInit {
   onDetails(item: Usato) {
     this.carDetails = item;
     console.log(this.carDetails);
+  }
+  onSearchTextEntered(searchValue: string) {
+    this.searchText = searchValue;
   }
 }

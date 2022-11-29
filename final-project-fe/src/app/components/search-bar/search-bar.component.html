@@ -6,6 +6,8 @@
         type="text"
         aria-label="Search"
         name="searchBar"
+        [(ngModel)]="enteredSerchValue"
+        (input)="onSearchTextChanged()"
       />
     </div>
     <div class="col-3 p-3">

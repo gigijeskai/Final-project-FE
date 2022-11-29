@@ -1,57 +1,62 @@
 <div class="container">
-  <app-search-bar></app-search-bar>
+  <app-search-bar>
+    (searchTextChanged)="onSearchTextEntered($event)"
+  </app-search-bar>
   <div class="row">
-    <div
-      class="col-md-6 col-lg-6 col-12"
-      *ngFor="let item of this.carList, let i = index"
-    >
-      <div class="card my-3">
-        <img
-          src="{{item.immagini}}"
-          class="card-img-top"
-          alt="{{item.marca}}{{item.modello}}"
-        />
-        <div class="card-body">
-          <h6 class="card-title">
-            {{item.marca}} {{item.modello}} {{item.categoria}}
-          </h6>
-          <hr />
-          <p class="d-flex justify-content-between">
-            <span>
-              <img
-                src="//images.hertz.com/content/dam/irac/Overlay/icons/person.png"
-            /></span>
-            <span
-              ><img
-                src="//images.hertz.com/content/dam/irac/Overlay/icons/feature_suitcase.png"
-            /></span>
-            <span
-              ><img
-                src="//images.hertz.com/content/dam/irac/Overlay/icons/feature_transmission.png"
-            /></span>
-            <span
-              ><img
-                src="//images.hertz.com/content/dam/irac/Overlay/icons/feature_fuel.png"
-            /></span>
-          </p>
-          <hr />
-          <p>Prezzo: {{item.prezzo}}€</p>
+    <ng-container *ngFor="let item of this.carList, let i = index">
+      <div
+        class="col-md-6 col-lg-6 col-12"
+        *ngIf="searchText === '' || item.citta.toLowerCase().includes(searchText)"
+      >
+        <div class="card my-3">
+          <img
+            src="{{item.immagini}}"
+            class="card-img-top"
+            alt="{{item.marca}}{{item.modello}}"
+          />
+          <div class="card-body">
+            <h6 class="card-title">
+              {{item.marca}} {{item.modello}} {{item.categoria}}
+            </h6>
+            <hr />
+            <p class="d-flex justify-content-between">
+              <span>
+                <img
+                  src="//images.hertz.com/content/dam/irac/Overlay/icons/person.png"
+              /></span>
+              <span
+                ><img
+                  src="//images.hertz.com/content/dam/irac/Overlay/icons/feature_suitcase.png"
+              /></span>
+              <span
+                ><img
+                  src="//images.hertz.com/content/dam/irac/Overlay/icons/feature_transmission.png"
+              /></span>
+              <span
+                ><img
+                  src="//images.hertz.com/content/dam/irac/Overlay/icons/feature_fuel.png"
+              /></span>
+            </p>
+            <hr />
+            <p>Prezzo: {{item.prezzo}}€</p>
+            <p>Prezzo: {{item.citta}}€</p>
 
-          <div class="col d-flex justify-content-around">
-            <a href="#" class="btn btn-primary">Acquista</a>
-            <a
-              href="#"
-              type="button"
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#modal-car-sell"
-              (click)="onDetails(item)"
-              >Dettagli</a
-            >
+            <div class="col d-flex justify-content-around">
+              <a href="#" class="btn btn-primary">Acquista</a>
+              <a
+                href="#"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-car-sell"
+                (click)="onDetails(item)"
+                >Dettagli</a
+              >
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </ng-container>
   </div>
 </div>
 <app-dettagli-auto-vendita

@@ -5,6 +5,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HomePage } from '../pages/home/home.page';
+import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {
@@ -15,7 +16,7 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [FooterComponent, NavbarComponent, SearchBarComponent],
-  imports: [CommonModule, RouterModule.forChild(routes)],
+  imports: [CommonModule, RouterModule.forChild(routes), FormsModule],
   exports: [SearchBarComponent, NavbarComponent, FooterComponent],
 })
 export class ComponentsModule {}

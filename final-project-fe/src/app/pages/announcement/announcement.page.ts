@@ -10,6 +10,7 @@ export class AnnouncementPage implements OnInit {
   constructor(private announcementSrv: AnnouncementService) {}
   announcements?: Announcement[];
   carDetails?: Announcement;
+  searchText: string = '';
 
   ngOnInit(): void {
     this.announcementSrv.getAnnouncement().subscribe((data) => {
@@ -20,5 +21,9 @@ export class AnnouncementPage implements OnInit {
   onDetails(item: Announcement) {
     this.carDetails = item;
     console.log(this.carDetails);
+  }
+
+  onSearchTextEntered(searchValue: string) {
+    this.searchText = searchValue;
   }
 }
