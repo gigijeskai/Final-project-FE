@@ -10,7 +10,6 @@ export class AnnouncementPage implements OnInit {
   constructor(private announcementSrv: AnnouncementService) {}
   announcements?: Announcement[];
   carDetails?: Announcement[];
-  newArray: any[] = [];
 
   ngOnInit(): void {
     this.announcementSrv.getAnnouncement().subscribe((data) => {
