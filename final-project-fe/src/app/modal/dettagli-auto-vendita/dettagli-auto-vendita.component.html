@@ -10,20 +10,77 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">
-          Dettagli veicolo
-        </h1>
-        <button
+        <h2>Informazioni di base</h2>
+        <!-- <button
           type="button"
           class="btn-close"
           data-bs-dismiss="modal"
           aria-label="Close"
-        ></button>
+        ></button> -->
       </div>
       <div class="modal-body">
         <div class="row">
+          <div class="col d-flex flex-column">
+            <div class="text-center">
+              <img
+                class="mb-2"
+                src="https://artifacts-cdn.autohero.com/retail-sharding/public/assets/registration-date-9a07e3bbd01438b143774cddbca6eff2.svg"
+                alt="calendario"
+              />
+              <p class="fw-bold mb-0">Immatricolazione</p>
+              <p>{{ dettagliAuto?.anno }}</p>
+            </div>
+            <div class="text-center">
+              <img
+                class="mb-2"
+                src="https://artifacts-cdn.autohero.com/retail-sharding/public/assets/mileage-ff5440ca0e6dc8147b543433122f58ca.svg"
+                alt="tachimetro"
+              />
+              <p class="fw-bold mb-0">Chilometraggio</p>
+              <p>{{ dettagliAuto?.chilometri }}km</p>
+            </div>
+            <div class="text-center">
+              <img
+                class="mb-2"
+                src="https://artifacts-cdn.autohero.com/retail-sharding/public/assets/fuel-3492c5cbbc8c47a60fc257778f4a9304.svg"
+                alt="carburante"
+              />
+              <p class="fw-bold mb-0">Carburante</p>
+              <p>{{ dettagliAuto?.alimentazione }}</p>
+            </div>
+          </div>
+          <div class="col d-flex flex-column">
+            <div class="text-center">
+              <img
+                class="mb-2"
+                src="https://artifacts-cdn.autohero.com/retail-sharding/public/assets/transmission-b833ce65ae0cbd7d70c164d504d0ce40.svg"
+                alt="cambio"
+              />
+              <p class="fw-bold mb-0">Cambio</p>
+              <p>{{ dettagliAuto?.cambio }}</p>
+            </div>
+            <div class="text-center">
+              <img
+                class="mb-2"
+                src="https://artifacts-cdn.autohero.com/retail-sharding/public/assets/power-596639fde4e38eb7ee84897c86fbb75b.svg"
+                alt="motore"
+              />
+              <p class="fw-bold mb-0">Potenza</p>
+              <p>{{ dettagliAuto?.kw }}kw</p>
+            </div>
+            <div class="text-center">
+              <img
+                class="mb-2"
+                src="https://artifacts-cdn.autohero.com/retail-sharding/public/assets/owners-24f12d44d12ed014661c518223c54298.svg"
+                alt="persona"
+              />
+              <p class="fw-bold mb-0">Proprietari</p>
+              <p>{{ dettagliAuto?.nproprietari }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
           <div class="col">
-            <img src="{{ dettagliAuto?.immagini }}" alt="" />
             <ul>
               <li>{{ dettagliAuto?.marca }}</li>
               <li>{{ dettagliAuto?.modello }}</li>
