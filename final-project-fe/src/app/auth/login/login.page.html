@@ -4,7 +4,7 @@
       <form
         #f="ngForm"
         (ngSubmit)="onSubmit()"
-        class="border border-1 border-success bg-light rounded-3 p-5 my-5"
+        class="rounded-3 p-5 my-5 shadow"
       >
         <h2 class="text-center mb-4">Accedi</h2>
         <div class="mb-3">
@@ -27,12 +27,10 @@
             id="password"
           />
         </div>
-        <button type="submit" class="btn btn-success mt-3 col-12">
-          Accedi
-        </button>
+        <button type="submit" class="btn mt-3 col-12">Accedi</button>
         <h6 class="text-center mt-4">
           o
-          <a class="text-success"> Registrati</a>
+          <a [routerLink]="['/registrati']"> Registrati</a>
         </h6>
       </form>
     </div>

@@ -4,7 +4,7 @@
       <form
         #f="ngForm"
         (ngSubmit)="onSubmit()"
-        class="border border-success bg-light rounded-3 border-1 p-5 my-5"
+        class="rounded-3 border-1 p-5 my-5 shadow"
       >
         <h2 class="text-center mb-4">Registrati</h2>
         <div class="row">
@@ -75,18 +75,12 @@
             id="password"
           />
         </div>
-        <input
-          type="hidden"
-          for="roles"
-          ngModel
-          name="roles"
-          value="ROLE_USER"
-        />
+
         <button type="submit" class="btn btn-success mt-3 col-12">
           Registrati
         </button>
         <h6 class="text-center mt-4">
-          o <a class="text-dark" [routerLink]="['/accedi']">Accedi</a>
+          o <a [routerLink]="['/accedi']">Accedi</a>
         </h6>
       </form>
     </div>

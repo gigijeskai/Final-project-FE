@@ -5,7 +5,7 @@
     <ng-container *ngFor="let item of this.carList, let i = index">
       <div
         class="col-md-6 col-lg-4 col-12 d-flex align-items-stretch shadow-sm"
-        *ngIf="searchText === '' || item.citta.toLowerCase().includes(searchText)"
+        *ngIf="searchText === '' || item.citta.toLowerCase().includes(searchText) || item.citta.toUpperCase().includes(searchText)"
       >
         <div class="card my-3 d-flex">
           <img
@@ -30,12 +30,13 @@
             </div>
 
             <p>
-              {{item.cilindrata}} &#8226; {{item.cv}}cv/{{item.kw}}kw &#8226;
+              {{item.cilindrata}}cc &#8226; {{item.cv}}cv/{{item.kw}}kw &#8226;
               {{item.alimentazione}}
             </p>
 
             <p>
-              {{item.anno}} &#8226; {{item.chilometri}} &#8226; {{item.cambio}}
+              {{item.anno}} &#8226; {{item.chilometri}}km &#8226;
+              {{item.cambio}}
             </p>
 
             <p>Città: {{item.citta}}</p>
