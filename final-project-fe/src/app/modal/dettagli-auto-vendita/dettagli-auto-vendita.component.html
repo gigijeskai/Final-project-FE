@@ -11,15 +11,17 @@
     <div class="modal-content">
       <div class="modal-header">
         <h2>Informazioni di base</h2>
-        <!-- <button
+        <button
           type="button"
           class="btn-close"
           data-bs-dismiss="modal"
           aria-label="Close"
-        ></button> -->
+        ></button>
       </div>
+
       <div class="modal-body">
-        <div class="row">
+        <hr />
+        <div class="row mb-5">
           <div class="col d-flex flex-column">
             <div class="text-center">
               <img
@@ -79,21 +81,52 @@
             </div>
           </div>
         </div>
+        <h2>Dettagli dell'auto</h2>
+        <hr />
         <div class="row">
           <div class="col">
-            <ul>
-              <li>{{ dettagliAuto?.marca }}</li>
-              <li>{{ dettagliAuto?.modello }}</li>
-              <li>{{ dettagliAuto?.cambio }}</li>
-              <li>{{ dettagliAuto?.alimentazione }}</li>
-              <li>{{ dettagliAuto?.consumokm }}</li>
-              <li>{{ dettagliAuto?.categoria }}</li>
-              <li></li>
-              <li>{{ dettagliAuto?.anno }}</li>
-              <li>{{ dettagliAuto?.citta }}</li>
-              <li></li>
-              <li>{{ dettagliAuto?.prezzo }}</li>
-            </ul>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <th scope="col">Cilindrata:</th>
+                  <td scope="col">{{ dettagliAuto?.cilindrata }}cc</td>
+                </tr>
+                <tr>
+                  <th scope="col">Cv:</th>
+                  <td scope="col">{{ dettagliAuto?.cv }}cv</td>
+                </tr>
+                <tr>
+                  <th scope="col">Consumi:</th>
+                  <td scope="col">{{ dettagliAuto?.consumokm }}km/L</td>
+                </tr>
+                <tr>
+                  <th scope="col">Classe emissioni:</th>
+                  <td scope="col">{{ dettagliAuto?.classe }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <th scope="col">Tipo</th>
+                  <td scope="col">{{ dettagliAuto?.categoria }}</td>
+                </tr>
+                <tr>
+                  <th scope="col">Colore</th>
+                  <td scope="col">{{ dettagliAuto?.colore }}</td>
+                </tr>
+                <tr>
+                  <th scope="col">Posti</th>
+                  <td scope="col">{{ dettagliAuto?.posti }}</td>
+                </tr>
+                <tr>
+                  <th scope="col">Numero porte</th>
+                  <td scope="col">{{ dettagliAuto?.porte }}</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
