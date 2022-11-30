@@ -1,0 +1,19 @@
+.btn-primary {
+  --bs-btn-color: orange;
+  --bs-btn-bg: rgb(255, 255, 255);
+  --bs-btn-border-color: orange;
+  --bs-btn-hover-color: rgb(255, 255, 255);
+  --bs-btn-hover-bg: orange;
+  --bs-btn-hover-border-color: orange;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: rgb(255, 255, 255);
+  --bs-btn-active-bg: orange;
+  --bs-btn-active-border-color: orange;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: orange;
+  --bs-btn-disabled-bg: orange;
+  --bs-btn-disabled-border-color: orange;
+}
+.card{
+  border: solid 1px black
+}

@@ -9,7 +9,7 @@ export class SearchBarComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
-
+  date = new Date();
   enteredSerchValue: string = '';
 
   @Output()

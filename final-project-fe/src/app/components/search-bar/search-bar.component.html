@@ -1,23 +1,33 @@
-<div class="container my-5">
-  <div class="row bg-secondary d-flex justify-content-around form-control">
-    <div class="col-4 p-3">
+<div class="container-fluid my-5 d-flex justify-content-center shadow-lg">
+  <div class="row d-flex justify-content-around form-control">
+    <div class="col-4 form-floating">
       <input
-        class="form-control p-4"
+        id="floatingInput"
+        placeholder="Dove?"
+        class="form-control"
         type="text"
         aria-label="Search"
         name="searchBar"
         [(ngModel)]="enteredSerchValue"
         (input)="onSearchTextChanged()"
       />
+      <label class="text-center" for="floatingInput">Dove?</label>
     </div>
-    <div class="col-3 p-3">
-      <input class="form-control p-4" type="date" id="date" />
+    <div class="col-3 form-floating">
+      <input
+        class="form-control p-0"
+        type="date"
+        id="date"
+        min="{{ date | date: 'yyyy-MM-dd' }}"
+      />
     </div>
-    <div class="col-3 p-3">
-      <input class="form-control p-4" type="date" id="date" />
-    </div>
-    <div class="col-2 p-3">
-      <button type="button" class="btn btn-info p-4 form-control">Cerca</button>
+    <div class="col-3 form-floating">
+      <input
+        class="form-control p-0"
+        type="date"
+        id="date"
+        min="{{ date | date: 'yyyy-MM-dd' }}"
+      />
     </div>
   </div>
 </div>
