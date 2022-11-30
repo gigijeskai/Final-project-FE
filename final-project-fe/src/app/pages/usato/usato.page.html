@@ -1,6 +1,5 @@
 <div class="container">
-  <app-search-bar>
-    (searchTextChanged)="onSearchTextEntered($event)"
+  <app-search-bar (searchTextChanged)="onSearchTextEntered($event)">
   </app-search-bar>
   <div class="row">
     <ng-container *ngFor="let item of this.carList, let i = index">
@@ -39,7 +38,7 @@
             </p>
             <hr />
             <p>Prezzo: {{item.prezzo}}€</p>
-            <p>Prezzo: {{item.citta}}€</p>
+            <p>Città: {{item.citta}}</p>
 
             <div class="col d-flex justify-content-around">
               <a href="#" class="btn btn-primary">Acquista</a>

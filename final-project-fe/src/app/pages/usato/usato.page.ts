@@ -7,10 +7,10 @@ import { UsedCarApiService } from 'src/app/services/used-car-api.service';
   styleUrls: ['./usato.page.scss'],
 })
 export class UsatoPage implements OnInit {
+  constructor(private usedCarApiService: UsedCarApiService) {}
   carList!: Usato[];
   carDetails?: Usato;
   searchText: string = '';
-  constructor(private usedCarApiService: UsedCarApiService) {}
 
   ngOnInit(): void {
     this.usedCarApiService
@@ -23,5 +23,6 @@ export class UsatoPage implements OnInit {
   }
   onSearchTextEntered(searchValue: string) {
     this.searchText = searchValue;
+    console.log(this.searchText);
   }
 }
