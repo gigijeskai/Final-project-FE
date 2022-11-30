@@ -15,29 +15,18 @@
           />
           <div class="card-body">
             <h6 class="card-title">
-              {{item.marca}} {{item.modello}} {{item.categoria}}
+              {{item.marca}} {{item.modello}} {{item.versione}}
             </h6>
-            <hr />
-            <p class="d-flex justify-content-between">
-              <span>
-                <img
-                  src="//images.hertz.com/content/dam/irac/Overlay/icons/person.png"
-              /></span>
-              <span
-                ><img
-                  src="//images.hertz.com/content/dam/irac/Overlay/icons/feature_suitcase.png"
-              /></span>
-              <span
-                ><img
-                  src="//images.hertz.com/content/dam/irac/Overlay/icons/feature_transmission.png"
-              /></span>
-              <span
-                ><img
-                  src="//images.hertz.com/content/dam/irac/Overlay/icons/feature_fuel.png"
-              /></span>
+
+            <p>
+              {{item.cilindrata}} &#8226; {{item.cv}}cv/{{item.kw}}kw &#8226;
+              {{item.alimentazione}}
             </p>
-            <hr />
-            <p>Prezzo: {{item.prezzo}}€</p>
+
+            <p>
+              {{item.anno}} &#8226; {{item.chilometri}} &#8226; {{item.cambio}}
+            </p>
+
             <p>Città: {{item.citta}}</p>
 
             <div class="col d-flex justify-content-around">
