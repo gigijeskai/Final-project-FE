@@ -12,7 +12,5 @@ export class LoginPage implements OnInit {
 
   ngOnInit(): void {}
 
-  onSubmit() {
-    console.log();
-  }
+  onSubmit() {}
 }

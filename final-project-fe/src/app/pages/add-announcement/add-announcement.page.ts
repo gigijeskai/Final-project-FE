@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { FormGroup, NgForm } from '@angular/forms';
 import { AnnouncementService } from 'src/app/services/announcementSrv';
 
 @Component({
@@ -8,6 +8,7 @@ import { AnnouncementService } from 'src/app/services/announcementSrv';
 })
 export class AddAnnouncementPage implements OnInit {
   @ViewChild('newAnnouncement') form!: NgForm;
+  newAnnouncement = FormGroup;
   constructor(private announcementSrv: AnnouncementService) {}
 
   ngOnInit(): void {}

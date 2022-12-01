@@ -5,9 +5,6 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { RegisterPage } from './register/register.page';
-import { AnnouncementPage } from '../pages/announcement/announcement.page';
-import { AddAnnouncementPage } from '../pages/add-announcement/add-announcement.page';
-import { ServiceModule } from '../services/service.module';
 
 const routes: Routes = [
   {
