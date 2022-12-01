@@ -31,7 +31,7 @@
                 alt="calendario"
               />
               <p class="fw-bold mb-0">Immatricolazione</p>
-              <p>{{ dettagliAuto?.anno }}</p>
+              <p>{{ dettagliAuto?.mese }}/{{ dettagliAuto?.anno }}</p>
             </div>
             <div class="text-center">
               <img
@@ -39,8 +39,8 @@
                 src="https://artifacts-cdn.autohero.com/retail-sharding/public/assets/mileage-ff5440ca0e6dc8147b543433122f58ca.svg"
                 alt="tachimetro"
               />
-              <p class="fw-bold mb-0">Chilometraggio</p>
-              <p>km</p>
+              <p class="fw-bold mb-0">Consumo</p>
+              <p>{{ dettagliAuto?.consumo }} km/l</p>
             </div>
             <div class="text-center">
               <img
@@ -68,8 +68,8 @@
                 src="https://artifacts-cdn.autohero.com/retail-sharding/public/assets/power-596639fde4e38eb7ee84897c86fbb75b.svg"
                 alt="motore"
               />
-              <p class="fw-bold mb-0">Potenza</p>
-              <p>kw</p>
+              <p class="fw-bold mb-0">Motore</p>
+              <p>{{ dettagliAuto?.cv }}cv {{ dettagliAuto?.cc }}cc</p>
             </div>
             <div class="text-center">
               <img
@@ -77,8 +77,8 @@
                 src="https://artifacts-cdn.autohero.com/retail-sharding/public/assets/owners-24f12d44d12ed014661c518223c54298.svg"
                 alt="persona"
               />
-              <p class="fw-bold mb-0">Proprietari</p>
-              <p></p>
+              <p class="fw-bold mb-0">Posti</p>
+              <p>{{ dettagliAuto?.posti }}</p>
             </div>
           </div>
         </div>
@@ -89,20 +89,20 @@
             <table class="table">
               <tbody>
                 <tr>
-                  <th scope="col">Cilindrata:</th>
-                  <td scope="col">cc</td>
+                  <th scope="col">Marca:</th>
+                  <td scope="col">{{ dettagliAuto?.marca }}</td>
                 </tr>
                 <tr>
-                  <th scope="col">Cv:</th>
-                  <td scope="col">cv</td>
+                  <th scope="col">Modello:</th>
+                  <td scope="col">{{ dettagliAuto?.modello }}</td>
                 </tr>
                 <tr>
-                  <th scope="col">Consumi:</th>
-                  <td scope="col">{{ dettagliAuto?.consumokm }}km/L</td>
+                  <th scope="col">Tipologia:</th>
+                  <td scope="col">{{ dettagliAuto?.tipologia }}</td>
                 </tr>
                 <tr>
-                  <th scope="col">Classe emissioni:</th>
-                  <td scope="col"></td>
+                  <th scope="col">Colore:</th>
+                  <td scope="col">{{ dettagliAuto?.colore }}</td>
                 </tr>
               </tbody>
             </table>
@@ -111,21 +111,21 @@
             <table class="table">
               <tbody>
                 <tr>
-                  <th scope="col">Tipo</th>
-                  <td scope="col">{{ dettagliAuto?.categoria }}</td>
+                  <th scope="col">Chilometri percorsi:</th>
+                  <td scope="col">{{ dettagliAuto?.km }}</td>
                 </tr>
                 <tr>
-                  <th scope="col">Colore</th>
-                  <td scope="col"></td>
+                  <th scope="col">Città:</th>
+                  <td scope="col">{{ dettagliAuto?.citta }}</td>
                 </tr>
                 <tr>
-                  <th scope="col">Posti</th>
-                  <td scope="col"></td>
+                  <th scope="col">Prezzo</th>
+                  <td scope="col">{{ dettagliAuto?.prezzo }}</td>
                 </tr>
-                <tr>
+                <!-- <tr>
                   <th scope="col">Numero porte</th>
                   <td scope="col"></td>
-                </tr>
+                </tr> -->
               </tbody>
             </table>
           </div>

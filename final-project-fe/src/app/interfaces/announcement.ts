@@ -1,16 +1,20 @@
 export interface Announcement {
-  passeggeri: string;
+  posti: number;
   cambio: string;
   alimentazione: string;
-  consumokm: string;
+  consumo: number;
   citta: string;
-  prezzo: string;
+  prezzo: number;
   marca: string;
   modello: string;
-  categoria: string;
-  anno: string;
-  bagagliaio: string;
+  tipologia: string;
+  anno: number;
+  mese: number;
   id: number;
   immagini: string;
-  attiva: boolean;
+  porte: number;
+  colore: string;
+  km: number;
+  cv: number;
+  cc: number;
 }

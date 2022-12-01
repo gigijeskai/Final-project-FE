@@ -2,7 +2,22 @@
   <form class="row g-3 my-5" #newAnnouncement="ngForm" (ngSubmit)="onSubmit()">
     <div class="col-md-6">
       <label for="marca" class="form-label">Marca</label>
-      <input type="text" class="form-control" id="marca" name="marca" ngModel />
+      <input
+        type="text"
+        class="form-control"
+        id="marca"
+        name="marca"
+        ngModel
+        required
+        #marca="ngModel"
+      />
+      <div
+        *ngIf="marca.invalid && marca.touched"
+        class="alert alert-danger"
+        role="alert"
+      >
+        Devi compilare questo campo!
+      </div>
     </div>
     <div class="col-md-6">
       <label for="modello" class="form-label">Modello</label>
@@ -11,8 +26,17 @@
         class="form-control"
         id="modello"
         name="modello"
+        #modello="ngModel"
         ngModel
+        required
       />
+      <div
+        *ngIf="modello.invalid && modello.touched"
+        class="alert alert-danger"
+        role="alert"
+      >
+        Devi compilare questo campo!
+      </div>
     </div>
     <div class="col-md-6">
       <label for="porte" class="form-label">Numero di porte</label>
@@ -22,7 +46,18 @@
         id="porte"
         name="porte"
         ngModel
+        minlength="1"
+        maxlength="1"
+        required
+        #porte="ngModel"
       />
+      <div
+        *ngIf="porte.invalid && porte.touched"
+        class="alert alert-danger"
+        role="alert"
+      >
+        Devi compilare questo campo!
+      </div>
     </div>
     <div class="col-md-6">
       <label for="posti" class="form-label">Numero di posti</label>
@@ -32,7 +67,18 @@
         id="posti"
         name="posti"
         ngModel
+        minlength="1"
+        maxlength="2"
+        required
+        #posti="ngModel"
       />
+      <div
+        *ngIf="posti.invalid && posti.touched"
+        class="alert alert-danger"
+        role="alert"
+      >
+        Devi compilare questo campo!
+      </div>
     </div>
     <div class="col-md-6">
       <label for="tipologia" class="form-label">Tipologia di veicolo</label>
@@ -43,6 +89,7 @@
         name="tipologia"
         ngModel
         required
+        #tipologia="ngModel"
       >
         <option selected disabled value="">Seleziona</option>
         <option>Berlina</option>
@@ -55,6 +102,13 @@
         <option>Suv/Fuoristrada</option>
         <option>Altro</option>
       </select>
+      <div
+        *ngIf="tipologia.invalid && tipologia.touched"
+        class="alert alert-danger"
+        role="alert"
+      >
+        Devi compilare questo campo!
+      </div>
     </div>
 
     <div class="col-md-6">
@@ -77,6 +131,7 @@
         name="alimentazione"
         ngModel
         required
+        #alimentazione="ngModel"
       >
         <option selected disabled value="">Seleziona</option>
         <option>Benzina</option>
@@ -90,16 +145,32 @@
         <option>Metano</option>
         <option>Altro</option>
       </select>
+      <div
+        *ngIf="alimentazione.invalid && alimentazione.touched"
+        class="alert alert-danger"
+        role="alert"
+      >
+        Devi compilare questo campo!
+      </div>
     </div>
     <div class="col-md-6">
-      <label for="immagini" class="form-label">Aggiungi URL immagine</label>
+      <label for="immagini" class="form-label">Aggiungi immagine</label>
       <input
         type="text"
         class="form-control"
         id="immagini"
         name="immagini"
         ngModel
+        required
+        #immagini="ngModel"
       />
+      <div
+        *ngIf="immagini.invalid && immagini.touched"
+        class="alert alert-danger"
+        role="alert"
+      >
+        Devi compilare questo campo!
+      </div>
     </div>
     <div class="col-md-6">
       <label for="mese" class="form-label">Mese immatricolazione</label>
@@ -109,7 +180,7 @@
         id="mese"
         name="mese"
         ngModel
-        required
+        #mese="ngModel"
       >
         <option selected disabled value="">Seleziona</option>
         <option>01</option>
@@ -137,7 +208,15 @@
         required
         minlength="2"
         maxlength="4"
+        #anno="ngModel"
       />
+      <div
+        *ngIf="anno.invalid && anno.touched"
+        class="alert alert-danger"
+        role="alert"
+      >
+        Devi compilare questo campo!
+      </div>
     </div>
     <div class="col-md-6">
       <label for="consumo" class="form-label">Consumo medio KM/L</label>
@@ -159,7 +238,16 @@
         name="km"
         ngModel
         maxlength="6"
+        required
+        #km="ngModel"
       />
+      <div
+        *ngIf="km.invalid && km.touched"
+        class="alert alert-danger"
+        role="alert"
+      >
+        Devi compilare questo campo!
+      </div>
     </div>
     <div class="col-md-6">
       <label for="cv" class="form-label">Cavalli motore</label>
@@ -173,6 +261,18 @@
       />
     </div>
     <div class="col-md-6">
+      <label for="cv" class="form-label">Cilindrata</label>
+      <input
+        type="number"
+        class="form-control"
+        id="cilindrata"
+        name="cilindrata"
+        ngModel
+        maxlength="4"
+        minlength="3"
+      />
+    </div>
+    <div class="col-md-6">
       <label for="cambio" class="form-label">Cambio</label>
       <select
         type="text"
@@ -181,17 +281,40 @@
         name="cambio"
         ngModel
         required
+        #cambio="ngModel"
       >
         <option selected disabled value="">Seleziona</option>
         <option>Automatico</option>
         <option>Manuale</option>
         <option>Semiautomatico</option>
       </select>
+      <div
+        *ngIf="cambio.invalid && cambio.touched"
+        class="alert alert-danger"
+        role="alert"
+      >
+        Devi compilare questo campo!
+      </div>
     </div>
 
     <div class="col-md-6">
       <label for="citta" class="form-label">Città</label>
-      <input type="text" class="form-control" id="citta" name="citta" ngModel />
+      <input
+        type="text"
+        class="form-control"
+        id="citta"
+        name="citta"
+        ngModel
+        required
+        #citta="ngModel"
+      />
+      <div
+        *ngIf="citta.invalid && citta.touched"
+        class="alert alert-danger"
+        role="alert"
+      >
+        Devi compilare questo campo!
+      </div>
     </div>
     <div class="col-md-6">
       <label for="prezzo" class="form-label">Prezzo giornaliero</label>
@@ -202,9 +325,17 @@
         name="prezzo"
         ngModel
         required
+        #prezzo="ngModel"
       />
+      <div
+        *ngIf="prezzo.invalid && prezzo.touched"
+        class="alert alert-danger"
+        role="alert"
+      >
+        Devi compilare questo campo!
+      </div>
     </div>
-    <div class="col-md-6">
+    <!-- <div class="col-md-6">
       <label for="email" class="form-label">Email</label>
       <input
         type="email"
@@ -212,8 +343,16 @@
         id="email"
         name="email"
         ngModel
-        required=""
+        required
+        #email="ngModel"
       />
+      <div
+        *ngIf="email.invalid && email.touched"
+        class="alert alert-danger"
+        role="alert"
+      >
+        Devi compilare questo campo!
+      </div>
     </div>
     <div class="col-md-6">
       <label for="telefono" class="form-label">Telefono</label>
@@ -224,11 +363,26 @@
         name="telefono"
         ngModel
         required
+        maxlength="14"
+        #telefono="ngModel"
       />
-    </div>
+      <div
+        *ngIf="telefono.invalid && telefono.touched"
+        class="alert alert-danger"
+        role="alert"
+      >
+        Devi compilare questo campo!
+      </div>
+    </div> -->
 
-    <div class="col-12">
-      <button type="submit" class="btn btn-primary">Pubblica annuncio</button>
+    <div class="col-12 mt-5">
+      <button
+        type="submit"
+        class="btn btn-primary col-12"
+        [disabled]="newAnnouncement.invalid"
+      >
+        Pubblica annuncio
+      </button>
     </div>
   </form>
 </div>
