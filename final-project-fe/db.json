@@ -84,6 +84,27 @@
       "anno": "2022",
       "immagini": "https://images.hertz.com/vehicles/220x128/ZEITEBMR999.jpg",
       "id": 5
+    },
+    {
+      "marca": "",
+      "modello": "",
+      "porte": "",
+      "posti": "",
+      "tipologia": "",
+      "colore": "",
+      "alimentazione": "",
+      "immagini": "",
+      "mese": "",
+      "anno": 12222222,
+      "consumo": "",
+      "km": "",
+      "cv": "",
+      "cambio": "",
+      "citta": "",
+      "prezzo": "",
+      "email": "",
+      "telefono": "",
+      "id": 6
     }
   ]
 }
