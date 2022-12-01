@@ -5,7 +5,7 @@
   <div class="row">
     <ng-container *ngFor="let item of this.announcements, let i = index">
       <div
-        class="col-md-6 col-lg-4 col-12 d-flex align-items-stretch shadow-sm"
+        class="col-md-6 col-lg-4 col-12 d-flex align-items-stretch shadow-sm justify-content-center"
         *ngIf="searchText === '' || item.citta.toLowerCase().includes(searchText) || item.citta.toUpperCase().includes(searchText)"
       >
         <div class="card my-3 d-flex">
