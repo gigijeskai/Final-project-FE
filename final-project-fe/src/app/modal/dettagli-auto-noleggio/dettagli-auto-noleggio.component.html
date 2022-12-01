@@ -21,22 +21,113 @@
         ></button>
       </div>
       <div class="modal-body">
+        <hr />
+        <div class="row mb-5">
+          <div class="col d-flex flex-column">
+            <div class="text-center">
+              <img
+                class="mb-2"
+                src="https://artifacts-cdn.autohero.com/retail-sharding/public/assets/registration-date-9a07e3bbd01438b143774cddbca6eff2.svg"
+                alt="calendario"
+              />
+              <p class="fw-bold mb-0">Immatricolazione</p>
+              <p>{{ dettagliAuto?.anno }}</p>
+            </div>
+            <div class="text-center">
+              <img
+                class="mb-2"
+                src="https://artifacts-cdn.autohero.com/retail-sharding/public/assets/mileage-ff5440ca0e6dc8147b543433122f58ca.svg"
+                alt="tachimetro"
+              />
+              <p class="fw-bold mb-0">Chilometraggio</p>
+              <p>km</p>
+            </div>
+            <div class="text-center">
+              <img
+                class="mb-2"
+                src="https://artifacts-cdn.autohero.com/retail-sharding/public/assets/fuel-3492c5cbbc8c47a60fc257778f4a9304.svg"
+                alt="carburante"
+              />
+              <p class="fw-bold mb-0">Carburante</p>
+              <p>{{ dettagliAuto?.alimentazione }}</p>
+            </div>
+          </div>
+          <div class="col d-flex flex-column">
+            <div class="text-center">
+              <img
+                class="mb-2"
+                src="https://artifacts-cdn.autohero.com/retail-sharding/public/assets/transmission-b833ce65ae0cbd7d70c164d504d0ce40.svg"
+                alt="cambio"
+              />
+              <p class="fw-bold mb-0">Cambio</p>
+              <p>{{ dettagliAuto?.cambio }}</p>
+            </div>
+            <div class="text-center">
+              <img
+                class="mb-2"
+                src="https://artifacts-cdn.autohero.com/retail-sharding/public/assets/power-596639fde4e38eb7ee84897c86fbb75b.svg"
+                alt="motore"
+              />
+              <p class="fw-bold mb-0">Potenza</p>
+              <p>kw</p>
+            </div>
+            <div class="text-center">
+              <img
+                class="mb-2"
+                src="https://artifacts-cdn.autohero.com/retail-sharding/public/assets/owners-24f12d44d12ed014661c518223c54298.svg"
+                alt="persona"
+              />
+              <p class="fw-bold mb-0">Proprietari</p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <h2>Dettagli dell'auto</h2>
+        <hr />
         <div class="row">
           <div class="col">
-            <img src="{{ dettagliAuto?.immagini }}" alt="" />
-            <ul>
-              <li>{{ dettagliAuto?.marca }}</li>
-              <li>{{ dettagliAuto?.modello }}</li>
-              <li>{{ dettagliAuto?.cambio }}</li>
-              <li>{{ dettagliAuto?.alimentazione }}</li>
-              <li>{{ dettagliAuto?.consumokm }}</li>
-              <li>{{ dettagliAuto?.categoria }}</li>
-              <li>{{ dettagliAuto?.bagagliaio }}</li>
-              <li>{{ dettagliAuto?.anno }}</li>
-              <li>{{ dettagliAuto?.citta }}</li>
-              <li>{{ dettagliAuto?.passeggeri }}</li>
-              <li>{{ dettagliAuto?.prezzo }}</li>
-            </ul>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <th scope="col">Cilindrata:</th>
+                  <td scope="col">cc</td>
+                </tr>
+                <tr>
+                  <th scope="col">Cv:</th>
+                  <td scope="col">cv</td>
+                </tr>
+                <tr>
+                  <th scope="col">Consumi:</th>
+                  <td scope="col">{{ dettagliAuto?.consumokm }}km/L</td>
+                </tr>
+                <tr>
+                  <th scope="col">Classe emissioni:</th>
+                  <td scope="col"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <th scope="col">Tipo</th>
+                  <td scope="col">{{ dettagliAuto?.categoria }}</td>
+                </tr>
+                <tr>
+                  <th scope="col">Colore</th>
+                  <td scope="col"></td>
+                </tr>
+                <tr>
+                  <th scope="col">Posti</th>
+                  <td scope="col"></td>
+                </tr>
+                <tr>
+                  <th scope="col">Numero porte</th>
+                  <td scope="col"></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>

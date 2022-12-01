@@ -1,48 +1,22 @@
 <app-search-bar
   (searchTextChanged)="onSearchTextEntered($event)"
 ></app-search-bar>
-<div class="container">
+<div class="container mb-5">
   <div class="row">
     <ng-container *ngFor="let item of this.announcements, let i = index">
       <div
-        class="col-md-4 col-lg-4 col-12 d-flex align-items-stretch"
-        *ngIf="searchText === '' || item.citta.toLowerCase().includes(searchText)"
+        class="col-md-6 col-lg-4 col-12 d-flex align-items-stretch shadow-sm"
+        *ngIf="searchText === '' || item.citta.toLowerCase().includes(searchText) || item.citta.toUpperCase().includes(searchText)"
       >
-        <div class="card my-3">
-          <img src="{{item.immagini}}" class="card-img-top" alt="bmw 320d" />
+        <div class="card my-3 d-flex">
+          <img
+            src="{{item.immagini}}"
+            class="card-img-top"
+            alt="{{item.marca}}{{item.modello}}"
+          />
           <div class="card-body">
-            <h6 class="card-title">
-              {{item.marca}} {{item.modello}} {{item.categoria}}
-            </h6>
-            <hr />
-            <p class="d-flex justify-content-between">
-              <span>
-                <img
-                  src="//images.hertz.com/content/dam/irac/Overlay/icons/person.png"
-                />{{ item.passeggeri}}</span
-              >
-              <span
-                ><img
-                  src="//images.hertz.com/content/dam/irac/Overlay/icons/feature_suitcase.png"
-                />{{item.bagagliaio}}L</span
-              >
-              <span
-                ><img
-                  src="//images.hertz.com/content/dam/irac/Overlay/icons/feature_transmission.png"
-                />{{item.cambio}}</span
-              >
-              <span
-                ><img
-                  src="//images.hertz.com/content/dam/irac/Overlay/icons/feature_fuel.png"
-                />{{item.consumokm}}</span
-              >
-            </p>
-            <hr />
-            <p>Prezzo: {{item.prezzo}}€</p>
-            <p>Città: {{item.citta}}</p>
-
-            <div class="col d-flex justify-content-around">
-              <a href="#" class="btn btn-primary">Acquista</a>
+            <div class="d-flex justify-content-between align-items-center">
+              <h6 class="card-title">{{item.marca}} {{item.modello}}</h6>
               <a
                 href="#"
                 type="button"
@@ -50,8 +24,18 @@
                 data-bs-toggle="modal"
                 data-bs-target="#modal-car-details"
                 (click)="onDetails(item)"
-                >Dettagli</a
-              >
+                ><i class="bi bi-info-circle"></i
+              ></a>
+            </div>
+
+            <p>cc &#8226; cv/kw &#8226; {{item.alimentazione}}</p>
+
+            <p>{{item.anno}} &#8226; km &#8226; {{item.cambio}}</p>
+
+            <p>Città: {{item.citta}}</p>
+
+            <div class="col d-flex justify-content-around">
+              <a href="#" class="btn btn-primary col-12">{{item.prezzo}}€</a>
             </div>
           </div>
         </div>

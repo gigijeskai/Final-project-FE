@@ -1,59 +1,5 @@
 <div class="container">
-  <form class="row g-3" #newAnnouncement="ngForm" (ngSubmit)="onSubmit()">
-    <div class="col-md-6">
-      <label for="passeggeri" class="form-label">Passeggeri</label>
-      <input
-        type="text"
-        class="form-control"
-        id="passeggeri"
-        name="passeggeri"
-        ngModel
-      />
-    </div>
-    <div class="col-md-6">
-      <label for="cambio" class="form-label">Cambio</label>
-      <input
-        type="text"
-        class="form-control"
-        id="cambio"
-        name="cambio"
-        ngModel
-      />
-    </div>
-    <div class="col-md-6">
-      <label for="alimentazione" class="form-label">Alimentazione</label>
-      <input
-        type="text"
-        class="form-control"
-        id="alimentazione"
-        name="alimentazione"
-        ngModel
-      />
-    </div>
-    <div class="col-md-6">
-      <label for="consumo" class="form-label">Consumo/km</label>
-      <input
-        type="text"
-        class="form-control"
-        id="consumo"
-        name="consumokm"
-        ngModel
-      />
-    </div>
-    <div class="col-md-6">
-      <label for="citta" class="form-label">Città</label>
-      <input type="text" class="form-control" id="citta" name="citta" ngModel />
-    </div>
-    <div class="col-md-6">
-      <label for="prezzo" class="form-label">Prezzo richiesto</label>
-      <input
-        type="text"
-        class="form-control"
-        id="prezzo"
-        name="prezzo"
-        ngModel
-      />
-    </div>
+  <form class="row g-3 my-5" #newAnnouncement="ngForm" (ngSubmit)="onSubmit()">
     <div class="col-md-6">
       <label for="marca" class="form-label">Marca</label>
       <input type="text" class="form-control" id="marca" name="marca" ngModel />
@@ -69,28 +15,81 @@
       />
     </div>
     <div class="col-md-6">
-      <label for="categoria" class="form-label">Categoria</label>
+      <label for="porte" class="form-label">Numero di porte</label>
       <input
-        type="text"
+        type="number"
         class="form-control"
-        id="categoria"
-        name="categoria"
+        id="porte"
+        name="porte"
         ngModel
       />
     </div>
     <div class="col-md-6">
-      <label for="bagagliaio" class="form-label">Capacità bagagliaio</label>
+      <label for="posti" class="form-label">Numero di posti</label>
       <input
-        type="text"
+        type="number"
         class="form-control"
-        id="bagagliaio"
-        name="bagagliaio"
+        id="posti"
+        name="posti"
         ngModel
       />
     </div>
     <div class="col-md-6">
-      <label for="anno" class="form-label">Anno</label>
-      <input type="text" class="form-control" id="anno" name="anno" ngModel />
+      <label for="tipologia" class="form-label">Tipologia di veicolo</label>
+      <select
+        type="select"
+        class="form-control form-select"
+        id="tipologia"
+        name="tipologia"
+        ngModel
+        required
+      >
+        <option selected disabled value="">Seleziona</option>
+        <option>Berlina</option>
+        <option>Cabrio</option>
+        <option>City car</option>
+        <option>Coupe</option>
+        <option>Furgoni/Van</option>
+        <option>Monovolume</option>
+        <option>Station wagon</option>
+        <option>Suv/Fuoristrada</option>
+        <option>Altro</option>
+      </select>
+    </div>
+
+    <div class="col-md-6">
+      <label for="colore" class="form-label">Colore</label>
+      <input
+        type="text"
+        class="form-control"
+        id="colore"
+        name="colore"
+        ngModel
+      />
+    </div>
+
+    <div class="col-md-6">
+      <label for="alimentazione" class="form-label">Alimentazione</label>
+      <select
+        type="text"
+        class="form-control form-select"
+        id="alimentazione"
+        name="alimentazione"
+        ngModel
+        required
+      >
+        <option selected disabled value="">Seleziona</option>
+        <option>Benzina</option>
+        <option>Diesel</option>
+        <option>Elettrica</option>
+        <option>Elettrica/Benzina</option>
+        <option>Elettrica/Diesel</option>
+        <option>Etanolo</option>
+        <option>Gpl</option>
+        <option>Idrogeno</option>
+        <option>Metano</option>
+        <option>Altro</option>
+      </select>
     </div>
     <div class="col-md-6">
       <label for="immagini" class="form-label">Aggiungi URL immagine</label>
@@ -99,6 +98,67 @@
         class="form-control"
         id="immagini"
         name="immagini"
+        ngModel
+      />
+    </div>
+    <div class="col-md-6">
+      <label for="anno" class="form-label">Anno immatricolazione</label>
+      <input type="text" class="form-control" id="anno" name="anno" ngModel />
+    </div>
+    <div class="col-md-6">
+      <label for="consumo" class="form-label">Consumo medio KM/L</label>
+      <input
+        type="text"
+        class="form-control"
+        id="consumo"
+        name="consumo"
+        ngModel
+      />
+    </div>
+    <div class="col-md-6">
+      <label for="km" class="form-label">Chilometri percorsi</label>
+      <input type="text" class="form-control" id="km" name="km" ngModel />
+    </div>
+    <div class="col-md-6">
+      <label for="cv" class="form-label">Cavalli motore</label>
+      <input type="text" class="form-control" id="cv" name="cv" ngModel />
+    </div>
+    <div class="col-md-6">
+      <label for="cambio" class="form-label">Cambio</label>
+      <input
+        type="text"
+        class="form-control"
+        id="cambio"
+        name="cambio"
+        ngModel
+      />
+    </div>
+
+    <div class="col-md-6">
+      <label for="citta" class="form-label">Città</label>
+      <input type="text" class="form-control" id="citta" name="citta" ngModel />
+    </div>
+    <div class="col-md-6">
+      <label for="prezzo" class="form-label">Prezzo giornaliero</label>
+      <input
+        type="text"
+        class="form-control"
+        id="prezzo"
+        name="prezzo"
+        ngModel
+      />
+    </div>
+    <div class="col-md-6">
+      <label for="email" class="form-label">Email</label>
+      <input type="text" class="form-control" id="email" name="email" ngModel />
+    </div>
+    <div class="col-md-6">
+      <label for="telefono" class="form-label">Telefono</label>
+      <input
+        type="text"
+        class="form-control"
+        id="telefono"
+        name="telefono"
         ngModel
       />
     </div>
