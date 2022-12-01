@@ -110,6 +110,26 @@
       "citta": "Firenze",
       "prezzo": 35,
       "id": 5
+    },
+    {
+      "marca": "Mini",
+      "modello": "One",
+      "porte": 3,
+      "posti": 4,
+      "tipologia": "Coupe",
+      "colore": "Rosso",
+      "alimentazione": "Benzina",
+      "immagini": "https://statics.quattroruote.it/content/dam/quattroruote/it/foto/2021/01/26/mini_cooper_2021_/gallery/rsmall/2021-Mini-Cooper-01.JPG",
+      "mese": "09",
+      "anno": 2008,
+      "consumo": 14,
+      "km": 180,
+      "cv": 110,
+      "cilindrata": 1.6,
+      "cambio": "Manuale",
+      "citta": "Latina",
+      "prezzo": 30,
+      "id": 6
     }
   ]
 }

@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { FormGroup, NgForm } from '@angular/forms';
+import { FormControl, FormGroup, NgForm } from '@angular/forms';
+import { from } from 'rxjs';
+import { Announcement } from 'src/app/interfaces/announcement';
 import { AnnouncementService } from 'src/app/services/announcementSrv';
 
 @Component({
@@ -8,15 +10,15 @@ import { AnnouncementService } from 'src/app/services/announcementSrv';
 })
 export class AddAnnouncementPage implements OnInit {
   @ViewChild('newAnnouncement') form!: NgForm;
-  newAnnouncement = FormGroup;
   constructor(private announcementSrv: AnnouncementService) {}
 
   ngOnInit(): void {}
   onSubmit() {
-    return this.announcementSrv
+    this.announcementSrv
       .addAnnouncement(this.form.value)
       .subscribe((announcement) =>
         this.announcementSrv.announcements?.push(announcement)
       );
+    return this.form.reset();
   }
 }
