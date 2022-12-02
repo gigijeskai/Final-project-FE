@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from './auth/auth.guard';
 import { AddAnnouncementPage } from './pages/add-announcement/add-announcement.page';
 import { AnnouncementPage } from './pages/announcement/announcement.page';
-import { HomePage } from './pages/home/home.page';
 import { UsatoPage } from './pages/usato/usato.page';
 
 const routes: Routes = [
@@ -18,6 +18,7 @@ const routes: Routes = [
   {
     path: 'pubblica-annuncio',
     component: AddAnnouncementPage,
+    canActivate: [AuthGuard],
   },
   {
     path: 'usato',
