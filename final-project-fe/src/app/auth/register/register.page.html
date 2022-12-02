@@ -17,6 +17,7 @@
                 type="text"
                 class="form-control"
                 id="firstname"
+                required
               />
             </div>
           </div>
@@ -29,6 +30,7 @@
                 type="text"
                 class="form-control"
                 id="lastname"
+                required
               />
             </div>
           </div>
@@ -41,6 +43,7 @@
                 type="text"
                 class="form-control"
                 id="age"
+                required
               />
             </div>
           </div>
@@ -53,6 +56,7 @@
             type="citta"
             class="form-control"
             id="citta"
+            required
           />
         </div>
         <div class="mb-3">
@@ -63,6 +67,7 @@
             type="email"
             class="form-control"
             id="email"
+            required
           />
         </div>
         <div class="mb-3">
@@ -73,10 +78,15 @@
             type="password"
             class="form-control"
             id="password"
+            required
           />
         </div>
 
-        <button type="submit" class="btn btn-success mt-3 col-12">
+        <button
+          type="submit"
+          class="btn btn-success mt-3 col-12"
+          [disabled]="!f.valid"
+        >
           Registrati
         </button>
         <h6 class="text-center mt-4">
