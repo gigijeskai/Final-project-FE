@@ -22,8 +22,8 @@ export class NavbarComponent implements OnInit {
     if (!this.authService.isLogin) {
       this.isAlert = true;
     }
-  }
-  alertOff() {
-    return (this.isAlert = false);
+    return setTimeout(() => {
+      this.isAlert = false;
+    }, 5000);
   }
 }
