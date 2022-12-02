@@ -11,6 +11,8 @@ export class AnnouncementPage implements OnInit {
   announcements?: Announcement[];
   carDetails?: Announcement;
   searchText: string = '';
+  isAlert = false;
+  item?: number;
 
   ngOnInit(): void {
     this.announcementSrv.getAnnouncement().subscribe((data) => {

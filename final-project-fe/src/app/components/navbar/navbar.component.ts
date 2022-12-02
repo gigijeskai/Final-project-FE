@@ -19,7 +19,6 @@ export class NavbarComponent implements OnInit {
   }
 
   alert() {
-    console.log('cliccato');
     if (!this.authService.isLogin) {
       this.isAlert = true;
     }
