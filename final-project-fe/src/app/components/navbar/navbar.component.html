@@ -61,22 +61,33 @@
         </ul>
       </div>
       <div class="col-md-3 text-end">
-        <button
-          type="button"
-          class="btn btn-outline-primary me-2"
-          [routerLink]="['/accedi']"
-          routerLinkActive="router-link-active"
+        <div
+          class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 text-center d-flex align-items-center justify-content-end"
+          *ngIf="this.authService.isLogin"
         >
-          Accedi
-        </button>
-        <button
-          type="button"
-          class="btn btn-primary"
-          [routerLink]="['/registrati']"
-          routerLinkActive="router-link-active"
-        >
-          Registrati
-        </button>
+          <b> Ciao, {{ this.authService.isLogged.user?.firstname }}</b>
+          <button class="mx-3 btn btn-light border border-3" (click)="logout()">
+            Logout
+          </button>
+        </div>
+        <div *ngIf="!this.authService.isLogin">
+          <button
+            type="button"
+            class="btn btn-outline-primary me-2"
+            [routerLink]="['/accedi']"
+            routerLinkActive="router-link-active"
+          >
+            Accedi
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            [routerLink]="['/registrati']"
+            routerLinkActive="router-link-active"
+          >
+            Registrati
+          </button>
+        </div>
       </div>
     </div>
   </nav>

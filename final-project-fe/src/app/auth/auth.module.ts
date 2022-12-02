@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { RegisterPage } from './register/register.page';
+import { AuthService } from './auth.service';
 
 const routes: Routes = [
   {
@@ -25,5 +26,6 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     HttpClientModule,
   ],
+  providers: [AuthService],
 })
 export class AuthModule {}

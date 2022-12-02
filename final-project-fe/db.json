@@ -8,6 +8,15 @@
       "age": "24",
       "citta": "roma",
       "id": 1
+    },
+    {
+      "email": "mariobianchi@gmail.com",
+      "password": "$2a$10$Lx0uErXvJlVz4cZukJuOcOZrbH0HrLrm90KYPUMtfc6et4wDy2IVu",
+      "firstname": "Mario",
+      "lastname": "Bianchi",
+      "age": "34",
+      "citta": "Pozzuoli",
+      "id": 2
     }
   ],
   "annunci": [
