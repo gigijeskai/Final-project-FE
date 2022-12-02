@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AnnouncementService } from './announcementSrv';
-import { AuthService } from './auth.service';
 import { UsedCarApiService } from './used-car-api.service';
 
 @NgModule({
-  declarations: [AnnouncementService, AuthService],
+  declarations: [AnnouncementService],
   imports: [CommonModule, NgModule],
-  providers: [AnnouncementService, AuthService, UsedCarApiService],
+  providers: [AnnouncementService, UsedCarApiService],
 })
 export class ServiceModule {}
