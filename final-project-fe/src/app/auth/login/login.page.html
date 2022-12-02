@@ -15,6 +15,7 @@
             type="email"
             class="form-control"
             id="email"
+            required
           />
         </div>
         <div class="mb-3">
@@ -25,9 +26,12 @@
             type="password"
             class="form-control"
             id="password"
+            required
           />
         </div>
-        <button type="submit" class="btn mt-3 col-12">Accedi</button>
+        <button type="submit" class="btn mt-3 col-12" [disabled]="!f.valid">
+          Accedi
+        </button>
         <h6 class="text-center mt-4">
           o
           <a [routerLink]="['/registrati']"> Registrati</a>
