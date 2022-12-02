@@ -12,7 +12,5 @@ export class DettagliAutoNoleggioComponent implements OnInit {
 
   constructor(private announcementSrv: AnnouncementService) {}
 
-  ngOnInit(): void {
-    console.log(this.dettagliAuto);
-  }
+  ngOnInit(): void {}
 }

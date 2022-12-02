@@ -11,7 +11,5 @@ export class DettagliAutoVenditaComponent implements OnInit {
   @Input() dettagliAuto: Usato | undefined;
   constructor(private announcementSrv: AnnouncementService) {}
 
-  ngOnInit(): void {
-    console.log(this.dettagliAuto);
-  }
+  ngOnInit(): void {}
 }

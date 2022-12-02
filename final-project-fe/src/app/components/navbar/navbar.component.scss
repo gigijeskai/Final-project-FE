@@ -40,3 +40,16 @@ a:hover{
 a{
   color: black;
 }
+.logOut{
+  background-color: red;
+  border: solid 1px white;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+.logOut:hover{
+  background-color: white;
+  border: solid 1px red;
+  color: black;
+  border-radius: 5px;
+  margin-left: 5px;
+}

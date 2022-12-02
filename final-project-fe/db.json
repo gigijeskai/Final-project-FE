@@ -17,6 +17,15 @@
       "age": "34",
       "citta": "Pozzuoli",
       "id": 2
+    },
+    {
+      "email": "prova@gmail.com",
+      "password": "$2a$10$AyoZyjy/5mECL2o60aJYf.bqmd.6.Ll6ciIxvkWopDWWuTK/LzDSS",
+      "firstname": "prova",
+      "lastname": "gmail",
+      "age": "12",
+      "citta": "Bergamo",
+      "id": 3
     }
   ],
   "annunci": [
