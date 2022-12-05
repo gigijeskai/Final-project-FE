@@ -14,4 +14,7 @@ export class UsedCarApiService {
   getAllCar() {
     return this.http.get<Usato[]>(this.urlApi);
   }
+  deleteCar(id: number) {
+    return this.http.delete(this.urlApi + 'usato/' + id);
+  }
 }

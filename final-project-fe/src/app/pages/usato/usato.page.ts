@@ -43,4 +43,8 @@ export class UsatoPage implements OnInit {
       amount: prezzo,
     });
   }
+  deleteCar(id: number) {
+    this.usedCarApiService.deleteCar(id).subscribe();
+    this.carList?.splice(id, 1);
+  }
 }

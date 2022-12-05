@@ -43,7 +43,10 @@
             <p>Prezzo: {{item.prezzo}}€</p>
 
             <div class="col d-flex justify-content-around">
-              <a class="btn btn-primary col-12" (click)="pay(item)"
+              <a
+                class="btn btn-primary col-12"
+                (click)="pay(item)"
+                (click)="deleteCar(item.id)"
                 >Vai al pagamento</a
               >
             </div>

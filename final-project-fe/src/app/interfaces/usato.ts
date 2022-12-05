@@ -19,4 +19,5 @@ export interface Usato {
   classe: string;
   citta: string;
   immagini: string;
+  id: number;
 }
