@@ -40,9 +40,12 @@
             </p>
 
             <p>Città: {{item.citta}}</p>
+            <p>Prezzo: {{item.prezzo}}€</p>
 
             <div class="col d-flex justify-content-around">
-              <a href="#" class="btn btn-primary col-12">{{item.prezzo}}€</a>
+              <a class="btn btn-primary col-12" (click)="pay(item)"
+                >Vai al pagamento</a
+              >
             </div>
           </div>
         </div>

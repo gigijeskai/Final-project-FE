@@ -25,4 +25,22 @@ export class UsatoPage implements OnInit {
     this.searchText = searchValue;
     console.log(this.searchText);
   }
+  pay(prezzo: Usato) {
+    var handler = (<any>window).StripeCheckout.configure({
+      key: 'pk_test_51MBb5SH7ocw78Ezlyf2imJT8xBmMBbMY7c8jVTRb1EBrtAPjkkPjbDxmlSl6dXyKTurtxsZLonH16N9MnGistTMP00Lf6vyuOy',
+      locale: 'auto',
+      token: function (token: any) {
+        // You can access the token ID with `token.id`.
+        // Get the token ID to your server-side code for use.
+
+        alert("Pagamento eseguito con successo, grazie per l'acquisto");
+      },
+    });
+
+    handler.open({
+      name: 'Demo Site',
+      description: 'Pagamento Stripe',
+      amount: prezzo,
+    });
+  }
 }
