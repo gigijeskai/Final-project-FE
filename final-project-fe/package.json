@@ -20,6 +20,8 @@
     "@angular/router": "^14.2.0",
     "@ng-bootstrap/ng-bootstrap": "^13.1.1",
     "@popperjs/core": "^2.10.2",
+    "@types/stripe-checkout": "^1.0.4",
+    "@types/stripe-v3": "^3.1.27",
     "bootstrap": "^5.2.0",
     "bootstrap-icons": "^1.10.2",
     "rxjs": "~7.5.0",
