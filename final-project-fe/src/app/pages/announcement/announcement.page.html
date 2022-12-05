@@ -42,7 +42,11 @@
             <p>Prezzo giornaliero: {{item.prezzo}}€</p>
 
             <div class="col d-flex justify-content-around" id="price-btn">
-              <button (click)="pay(item)" class="btn btn-primary col-12">
+              <button
+                (click)="pay(item)"
+                (click)="deleteAnnouncement(item.id)"
+                class="btn btn-primary col-12"
+              >
                 Vai al pagamento
               </button>
             </div>

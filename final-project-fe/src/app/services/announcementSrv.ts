@@ -22,4 +22,7 @@ export class AnnouncementService {
       announcement
     );
   }
+  deleteAnnouncement(id: number) {
+    return this.http.delete(environment.urlAPI + 'annunci/' + id);
+  }
 }

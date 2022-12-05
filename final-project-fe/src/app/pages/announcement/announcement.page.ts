@@ -50,6 +50,12 @@ export class AnnouncementPage implements OnInit {
       amount: prezzo,
     });
   }
+  deleteAnnouncement(id: number) {
+    this.announcementSrv.deleteAnnouncement(id).subscribe();
+    this.announcementSrv.getAnnouncement().subscribe((data) => {
+      this.announcementSrv.announcements = data;
+    });
+  }
 
   // loadStripe() {
   //   if (!window.document.getElementById('stripe-script')) {
