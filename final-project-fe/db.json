@@ -50,26 +50,6 @@
       "cc": 2.5
     },
     {
-      "posti": 5,
-      "cambio": "manuale",
-      "alimentazione": "diesel",
-      "consumo": 4,
-      "citta": "roma",
-      "prezzo": 45,
-      "marca": "bmw",
-      "modello": "320d",
-      "tipologia": "berlina",
-      "anno": 2016,
-      "mese": 11,
-      "immagini": "https://auto1-homepage.prod.mp.auto1.cloud/static/optimized/blue-car-hp-left-bmw.png",
-      "id": 1,
-      "colore": "blu",
-      "porte": 5,
-      "km": 120,
-      "cv": 180,
-      "cc": 2.5
-    },
-    {
       "marca": "Kia",
       "modello": "Sportage",
       "porte": 5,
