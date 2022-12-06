@@ -1,3 +1,8 @@
+#contatti{
+  background-color: orange;
+  color: white;
+  border-radius: 0.8rem;
+}
 .btn {
   --bs-btn-color: orange;
   --bs-btn-bg: rgb(255, 255, 255);
@@ -14,13 +19,16 @@
   --bs-btn-disabled-bg: lightgrey;
   --bs-btn-disabled-border-color: gray;
 }
-a:hover{
-  color: orange;
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #ff9800;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #ff980040;
 }
-a{
-  color: black;
+ .form-select{
+  border: 1px solid orange
 }
-form{
-  border: solid 1px orange
+ .form-control{
+  border: 1px solid orange
 }
-

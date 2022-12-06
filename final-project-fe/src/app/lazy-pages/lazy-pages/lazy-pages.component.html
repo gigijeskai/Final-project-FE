@@ -1,0 +1,81 @@
+<div class="container my-5">
+  <div class="row">
+    <div class="row">
+      <div id="contatti" class="col text-center mb-5">
+        <h1 class="p-5">Contatti</h1>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="mb-5">
+        <h2>Telefono</h2>
+        <h3>0123 456789</h3>
+      </div>
+      <div>
+        <h2>Scrivici un email</h2>
+        <form
+          #sendMail="ngForm"
+          action="mailto:someone@example.com"
+          method="post"
+          enctype="text/plain"
+        >
+          Nome:<br />
+          <input
+            type="text"
+            name="name"
+            class="form-control"
+            placeholder="Inserisci il tuo nome"
+            ngModel
+            required
+            #nome="ngModel"
+          />
+          <div
+            *ngIf="nome.invalid && nome.touched"
+            class="alert alert-danger"
+            role="alert"
+          >
+            Devi compilare questo campo!
+          </div>
+          <br />
+          E-mail:<br />
+          <input
+            type="text"
+            name="mail"
+            class="form-control"
+            placeholder="Inserisci la tua email"
+            ngModel
+            required
+            #mail="ngModel"
+          />
+          <div
+            *ngIf="mail.invalid && mail.touched"
+            class="alert alert-danger"
+            role="alert"
+          >
+            Devi compilare questo campo!
+          </div>
+          <br />
+          Testo:<br />
+          <textarea
+            placeholder="Inserisci il testo dell'email"
+            id="corpo-email"
+            name="corpo-email"
+            rows="4"
+            cols="50"
+            class="form-control"
+          ></textarea>
+          <br /><br />
+          <button
+            class="btn me-2"
+            type="submit"
+            value="Send"
+            [disabled]="sendMail.invalid"
+          >
+            Invia
+          </button>
+          <button class="btn" type="reset" value="Reset">Annulla</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

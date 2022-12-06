@@ -24,6 +24,7 @@ const routes: Routes = [
     path: 'usato',
     component: UsatoPage,
   },
+  { path: 'lazy-pages', loadChildren: () => import('./lazy-pages/lazy-pages/lazy-pages.module').then(m => m.LazyPagesModule) },
 ];
 
 @NgModule({
