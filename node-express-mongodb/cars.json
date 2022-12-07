@@ -1,0 +1,421 @@
+[{
+  "_id": {
+    "$oid": "63908211be65fa25d211f586"
+  },
+  "posti": "4",
+  "cambio": "Manuale",
+  "alimentazione": "Benzina",
+  "consumokm": "25",
+  "prezzo": "9.980",
+  "marca": "Renault",
+  "modello": "Twingo",
+  "categoria": "Berlina",
+  "anno": "07/2020",
+  "chilometri": "29.805",
+  "cv": "75",
+  "kw": "55",
+  "nproprietari": "1",
+  "colore": "Bianco",
+  "cilindrata": "999",
+  "porte": "5",
+  "versione": "S&S intens led carplay ",
+  "classe": "Euro 6",
+  "citta": "Roma",
+  "immagini": "https://static.europcar.com/carvisuals/450x300/32730_GWY_R.png?app=1.0.0",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670414865463"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670414865463"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63908254be65fa25d211f58a"
+  },
+  "posti": "5",
+  "cambio": "Manuale",
+  "alimentazione": "Diesel",
+  "consumokm": "24",
+  "prezzo": "16.600",
+  "marca": "Jeep",
+  "modello": "Renegade",
+  "categoria": "Suv",
+  "anno": "01/2020",
+  "chilometri": "58.000",
+  "cv": "120",
+  "kw": "88",
+  "nproprietari": "2",
+  "colore": "nero",
+  "cilindrata": "1.598",
+  "porte": "5",
+  "versione": "mjt Limited 2wd",
+  "classe": "Euro 6",
+  "citta": "Milano",
+  "immagini": "https://static.europcar.com/carvisuals/450x300/52279_GWY_R.png?app=1.0.0",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670414932270"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670414932270"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63908293be65fa25d211f58e"
+  },
+  "posti": "4",
+  "cambio": "Manuale",
+  "alimentazione": "Benzina",
+  "consumokm": "24",
+  "prezzo": "12.900",
+  "marca": "Fiat",
+  "modello": "Panda",
+  "categoria": "City car",
+  "anno": "05/2022",
+  "chilometri": "1",
+  "cv": "69",
+  "kw": "51",
+  "nproprietari": "1",
+  "colore": "Arancione",
+  "cilindrata": "999",
+  "porte": "5",
+  "versione": "Easy",
+  "classe": "Euro 6",
+  "citta": "Torino",
+  "immagini": "https://static.europcar.com/carvisuals/450x300/22647_GWY_R.png?app=1.0.0",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670414995878"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670414995878"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639082bdbe65fa25d211f592"
+  },
+  "posti": "5",
+  "cambio": "Manuale",
+  "alimentazione": "Benzina",
+  "consumokm": "24",
+  "prezzo": "13.900",
+  "marca": "Peugeot",
+  "modello": "208",
+  "categoria": "Berlina",
+  "anno": "10/2020",
+  "chilometri": "4.500",
+  "cv": "75",
+  "kw": "55",
+  "nproprietari": "1",
+  "colore": "Grigio",
+  "cilindrata": "1.199",
+  "porte": "5",
+  "versione": "PureTech 75 Stop&Start",
+  "classe": "Euro 6",
+  "citta": "Bologna",
+  "immagini": "https://static.europcar.com/carvisuals/450x300/43479_GWY_R.png?app=1.0.0 ",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670415037216"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670415037216"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639082dfbe65fa25d211f596"
+  },
+  "posti": "5",
+  "cambio": "Manuale",
+  "alimentazione": "Diesel",
+  "consumokm": "24",
+  "prezzo": "14.000",
+  "marca": "Fiat",
+  "modello": "500x",
+  "categoria": "Suv",
+  "anno": "12/2020",
+  "chilometri": "5.000",
+  "cv": "95",
+  "kw": "70",
+  "nproprietari": "1",
+  "colore": "Rosso",
+  "cilindrata": "1.248",
+  "porte": "5",
+  "versione": "MultiJet",
+  "classe": "Euro 6",
+  "citta": "Roma",
+  "immagini": "https://static.europcar.com/carvisuals/450x300/44458_GWY_R.png?app=1.0.0",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670415071217"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670415071217"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63908305be65fa25d211f59a"
+  },
+  "posti": "4",
+  "cambio": "Manuale",
+  "alimentazione": "Benzina",
+  "consumokm": "24",
+  "prezzo": "10.500",
+  "marca": "Fiat",
+  "modello": "500",
+  "categoria": "City car",
+  "anno": "01/2020",
+  "chilometri": "20.000",
+  "cv": "69",
+  "kw": "51",
+  "nproprietari": "2",
+  "colore": "Bianco",
+  "cilindrata": "1.198",
+  "porte": "3",
+  "versione": "Pop",
+  "classe": "Euro 6",
+  "citta": "Milano",
+  "immagini": "https://static.europcar.com/carvisuals/450x300/30796_GWY_R.png?app=1.0.0",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670415109632"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670415109632"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6390832fbe65fa25d211f59e"
+  },
+  "posti": "5",
+  "cambio": "Automatico",
+  "alimentazione": "Diesel",
+  "consumokm": "25",
+  "prezzo": "36.699",
+  "marca": "Opel",
+  "modello": "Astra",
+  "categoria": "Berlina",
+  "anno": "11/2022",
+  "chilometri": "0",
+  "cv": "131",
+  "kw": "96",
+  "nproprietari": "0",
+  "colore": "Giallo",
+  "cilindrata": "1.498",
+  "porte": "5",
+  "versione": "Ultimate",
+  "classe": "Euro 6",
+  "citta": "Roma",
+  "immagini": "https://static.europcar.com/carvisuals/450x300/47618_GWY_R.png?app=1.0.0",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670415151168"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670415151168"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63908363be65fa25d211f5a2"
+  },
+  "posti": "7",
+  "cambio": "Automatico",
+  "alimentazione": "Diesel",
+  "consumokm": "21",
+  "prezzo": "48.900",
+  "marca": "Volkswagen",
+  "modello": "Caravelle t6.1",
+  "categoria": "Van",
+  "anno": "11/2022",
+  "chilometri": "0",
+  "cv": "150",
+  "kw": "110",
+  "nproprietari": "0",
+  "colore": "Nero",
+  "cilindrata": "1.968",
+  "porte": "25",
+  "versione": "Comfortline dsg7",
+  "classe": "Euro 6",
+  "citta": "Udine",
+  "immagini": "https://static.europcar.com/carvisuals/450x300/31130_GWY_R.png?app=1.0.0",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670415203579"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670415203579"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6390838dbe65fa25d211f5a6"
+  },
+  "posti": "5",
+  "cambio": "Automatico",
+  "alimentazione": "Benzina",
+  "consumokm": "30",
+  "prezzo": "70.200",
+  "marca": "Mercedes",
+  "modello": "E 300",
+  "categoria": "Berlina",
+  "anno": "11/2022",
+  "chilometri": "0",
+  "cv": "320",
+  "kw": "235",
+  "nproprietari": "0",
+  "colore": "Argento",
+  "cilindrata": "1.991",
+  "porte": "5",
+  "versione": "Premium",
+  "classe": "Euro 6",
+  "citta": "Bergamo",
+  "immagini": "https://static.europcar.com/carvisuals/450x300/29394_GWY_R.png?app=1.0.0",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670415245868"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670415245868"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639083b4be65fa25d211f5aa"
+  },
+  "posti": "5",
+  "cambio": "Automatico",
+  "alimentazione": "Diesel",
+  "consumokm": "24",
+  "prezzo": "46.500",
+  "marca": "Audi",
+  "modello": "A4",
+  "categoria": "Station wagon",
+  "anno": "11/2022",
+  "chilometri": "0",
+  "cv": "163",
+  "kw": "120",
+  "nproprietari": "0",
+  "colore": "Argento",
+  "cilindrata": "1.968",
+  "porte": "5",
+  "versione": "Business 35 tdi s tronic",
+  "classe": "Euro 6",
+  "citta": "Napoli",
+  "immagini": "https://static.europcar.com/carvisuals/450x300/50335_GWY_R.png?app=1.0.0 ",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670415284080"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670415284080"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639083d2be65fa25d211f5ae"
+  },
+  "posti": "5",
+  "cambio": "Automatico",
+  "alimentazione": "Benzina",
+  "consumokm": "4",
+  "prezzo": "40.150",
+  "marca": "Volvo",
+  "modello": "S60",
+  "categoria": "Berlina",
+  "anno": "11/2022",
+  "chilometri": "0",
+  "cv": "163",
+  "kw": "120",
+  "nproprietari": "0",
+  "colore": "Grigio",
+  "cilindrata": "1.969",
+  "porte": "5",
+  "versione": "Plus",
+  "classe": "Euro 6",
+  "citta": "Palermo",
+  "immagini": "https://static.europcar.com/carvisuals/450x300/50332_GWY_R.png?app=1.0.0",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670415314645"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670415314645"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639083e9be65fa25d211f5b0"
+  },
+  "posti": "5",
+  "cambio": "Manuale",
+  "alimentazione": "Benzina",
+  "consumokm": "25",
+  "prezzo": "23.400",
+  "marca": "Ford",
+  "modello": "Puma",
+  "categoria": "Suv",
+  "anno": "11/2022",
+  "chilometri": "21",
+  "cv": "125",
+  "kw": "92",
+  "nproprietari": "0",
+  "colore": "Blu",
+  "cilindrata": "998",
+  "porte": "5",
+  "versione": "Ecoboost ST-Line",
+  "classe": "Euro 6",
+  "citta": "Milano",
+  "immagini": "https://static.europcar.com/carvisuals/450x300/50384_GWY_R.png?app=1.0.0",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670415337663"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670415337663"
+    }
+  },
+  "__v": 0
+}]
