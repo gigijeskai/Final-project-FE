@@ -42,7 +42,7 @@
       "anno": 2016,
       "mese": 11,
       "immagini": "https://auto1-homepage.prod.mp.auto1.cloud/static/optimized/blue-car-hp-left-bmw.png",
-      "id": 1,
+
       "colore": "blu",
       "porte": 5,
       "km": 120,
@@ -66,8 +66,8 @@
       "cilindrata": 1.6,
       "cambio": "Manuale",
       "citta": "Bergamo",
-      "prezzo": 40,
-      "id": 2
+      "prezzo": 40
+
     },
     {
       "marca": "Fiat",
@@ -86,8 +86,8 @@
       "cilindrata": 1.6,
       "cambio": "Manuale",
       "citta": "Milano",
-      "prezzo": 30,
-      "id": 3
+      "prezzo": 30
+
     },
     {
       "marca": "Audi",
@@ -106,8 +106,8 @@
       "cilindrata": 2.5,
       "cambio": "Automatico",
       "citta": "Latina",
-      "prezzo": 80,
-      "id": 4
+      "prezzo": 80
+
     },
     {
       "marca": "Alfa romeo",
@@ -126,8 +126,8 @@
       "cilindrata": 1.9,
       "cambio": "Automatico",
       "citta": "Firenze",
-      "prezzo": 35,
-      "id": 5
+      "prezzo": 35
+
     },
     {
       "marca": "Mini",
@@ -146,8 +146,8 @@
       "cilindrata": 1.6,
       "cambio": "Manuale",
       "citta": "Latina",
-      "prezzo": 30,
-      "id": 6
+      "prezzo": 30
+
     }
   ]
 }

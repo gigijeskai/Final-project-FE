@@ -10,7 +10,6 @@ export interface Announcement {
   tipologia: string;
   anno: number;
   mese: number;
-  id: number;
   immagini: string;
   porte: number;
   colore: string;
