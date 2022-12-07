@@ -51,9 +51,14 @@ export class AnnouncementPage implements OnInit {
     });
   }
   deleteAnnouncement(id: number) {
+    this.announcementSrv.getAnnouncement().subscribe((data) => {
+      this.announcementSrv.announcements = data;
+    });
     this.announcementSrv.deleteAnnouncement(id).subscribe();
-    this.announcements?.splice(id, 1);
-
+    this.announcementSrv.getAnnouncement().subscribe((data) => {
+      this.announcementSrv.announcements = data;
+      this.announcements = data;
+    });
     console.log(this.announcements);
   }
 
