@@ -47,7 +47,8 @@
       "porte": 5,
       "km": 120,
       "cv": 180,
-      "cc": 2.5
+      "cc": 2.5,
+      "id": 1
     },
     {
       "marca": "Kia",
@@ -66,8 +67,8 @@
       "cilindrata": 1.6,
       "cambio": "Manuale",
       "citta": "Bergamo",
-      "prezzo": 40
-
+      "prezzo": 40,
+      "id": 2
     },
     {
       "marca": "Fiat",
@@ -86,8 +87,8 @@
       "cilindrata": 1.6,
       "cambio": "Manuale",
       "citta": "Milano",
-      "prezzo": 30
-
+      "prezzo": 30,
+      "id": 3
     },
     {
       "marca": "Audi",
@@ -106,8 +107,8 @@
       "cilindrata": 2.5,
       "cambio": "Automatico",
       "citta": "Latina",
-      "prezzo": 80
-
+      "prezzo": 80,
+      "id": 4
     },
     {
       "marca": "Alfa romeo",
@@ -126,8 +127,8 @@
       "cilindrata": 1.9,
       "cambio": "Automatico",
       "citta": "Firenze",
-      "prezzo": 35
-
+      "prezzo": 35,
+      "id": 5
     },
     {
       "marca": "Mini",
@@ -146,8 +147,8 @@
       "cilindrata": 1.6,
       "cambio": "Manuale",
       "citta": "Latina",
-      "prezzo": 30
-
+      "prezzo": 30,
+      "id": 6
     }
   ]
 }

@@ -53,9 +53,8 @@ export class AnnouncementPage implements OnInit {
   deleteAnnouncement(id: number) {
     this.announcementSrv.deleteAnnouncement(id).subscribe();
     this.announcements?.splice(id, 1);
-    this.announcementSrv.getAnnouncement().subscribe((data) => {
-      this.announcementSrv.announcements = data;
-    });
+
+    console.log(this.announcements);
   }
 
   // loadStripe() {
