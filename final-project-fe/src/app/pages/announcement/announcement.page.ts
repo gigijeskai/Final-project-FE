@@ -56,7 +56,6 @@ export class AnnouncementPage implements OnInit {
     this.announcementSrv.getAnnouncement().subscribe((data) => {
       this.announcementSrv.announcements = data;
     });
-    return this.announcementSrv.announcements;
   }
 
   // loadStripe() {
