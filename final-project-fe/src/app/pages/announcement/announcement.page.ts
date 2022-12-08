@@ -59,7 +59,6 @@ export class AnnouncementPage implements OnInit {
       this.announcementSrv.announcements = data;
       this.announcements = data;
     });
-    console.log(this.announcements);
   }
 
   // loadStripe() {
