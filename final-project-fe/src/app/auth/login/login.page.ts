@@ -14,9 +14,12 @@ export class LoginPage implements OnInit {
   ngOnInit(): void {}
 
   onSubmit() {
-    return this.authService.signIn(this.form.value).subscribe((ok) => {
-      localStorage.setItem('isLogged', JSON.stringify(ok));
-      this.router.navigate(['/home']);
-    });
+    return this.authService.signIn(this.form.value).subscribe(
+      (ok) => {
+        localStorage.setItem('isLogged', JSON.stringify(ok));
+        this.router.navigate(['/home']);
+      },
+      (error) => alert('Email o Password errati')
+    );
   }
 }
