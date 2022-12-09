@@ -12,9 +12,10 @@ import { AnnouncementModule } from './pages/announcement/announcement.module';
 import { HomeModule } from './pages/home/home.module';
 import { UsatoModule } from './pages/usato/usato.module';
 import { ModalModule } from './modal/modal.module';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, NotFoundComponent],
   providers: [],
   bootstrap: [AppComponent],
   imports: [

@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './auth/auth.guard';
+import { NotFoundComponent } from './not-found/not-found.component';
 import { AddAnnouncementPage } from './pages/add-announcement/add-announcement.page';
 import { AnnouncementPage } from './pages/announcement/announcement.page';
+import { HomePage } from './pages/home/home.page';
 import { UsatoPage } from './pages/usato/usato.page';
 
 const routes: Routes = [
@@ -10,6 +12,10 @@ const routes: Routes = [
     path: '',
     pathMatch: 'full',
     redirectTo: 'home',
+  },
+  {
+    path: 'home',
+    component: HomePage,
   },
   {
     path: 'annunci',
@@ -24,7 +30,15 @@ const routes: Routes = [
     path: 'usato',
     component: UsatoPage,
   },
-  { path: 'lazy-pages', loadChildren: () => import('./lazy-pages/lazy-pages/lazy-pages.module').then(m => m.LazyPagesModule) },
+  {
+    path: 'lazy-pages',
+    loadChildren: () =>
+      import('./lazy-pages/lazy-pages/lazy-pages.module').then(
+        (m) => m.LazyPagesModule
+      ),
+  },
+  { path: '404', component: NotFoundComponent },
+  { path: '**', redirectTo: '/404' },
 ];
 
 @NgModule({
