@@ -15,7 +15,7 @@ export class UsatoPage implements OnInit {
   ngOnInit(): void {
     this.usedCarApiService.getAllCar().subscribe(
       (data: Usato[]) => (this.carList = data),
-      (error) => alert('Ops, qualcosa è andato storto, riprova più tardi')
+      (error) => alert('  ERROR:503 Service Unavailable')
     );
   }
   onDetails(item: Usato) {

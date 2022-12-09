@@ -20,10 +20,13 @@ export class AnnouncementPage implements OnInit {
   handler: any = null;
 
   ngOnInit(): void {
-    this.announcementSrv.getAnnouncement().subscribe((data) => {
-      this.announcementSrv.announcements = data;
-      this.announcements = data;
-    });
+    this.announcementSrv.getAnnouncement().subscribe(
+      (data) => {
+        this.announcementSrv.announcements = data;
+        this.announcements = data;
+      },
+      (error) => alert('  ERROR:503 Service Unavailable')
+    );
   }
   onDetails(item: Announcement) {
     this.carDetails = item;
