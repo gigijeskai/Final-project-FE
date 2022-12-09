@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './auth/auth.guard';
+import { LoginPage } from './auth/login/login.page';
+import { RegisterPage } from './auth/register/register.page';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AddAnnouncementPage } from './pages/add-announcement/add-announcement.page';
 import { AnnouncementPage } from './pages/announcement/announcement.page';
@@ -36,6 +38,14 @@ const routes: Routes = [
       import('./lazy-pages/lazy-pages/lazy-pages.module').then(
         (m) => m.LazyPagesModule
       ),
+  },
+  {
+    path: 'accedi',
+    component: LoginPage,
+  },
+  {
+    path: 'registrati',
+    component: RegisterPage,
   },
   { path: '404', component: NotFoundComponent },
   { path: '**', redirectTo: '/404' },
