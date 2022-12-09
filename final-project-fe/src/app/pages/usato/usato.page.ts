@@ -13,9 +13,10 @@ export class UsatoPage implements OnInit {
   searchText: string = '';
 
   ngOnInit(): void {
-    this.usedCarApiService
-      .getAllCar()
-      .subscribe((data: Usato[]) => (this.carList = data));
+    this.usedCarApiService.getAllCar().subscribe(
+      (data: Usato[]) => (this.carList = data),
+      (error) => alert('Ops, qualcosa è andato storto, riprova più tardi')
+    );
   }
   onDetails(item: Usato) {
     this.carDetails = item;
