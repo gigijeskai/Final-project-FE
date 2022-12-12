@@ -10,9 +10,9 @@ import { ComponentsModule } from './components/components.module';
 import { AddAnnouncementModule } from './pages/add-announcement/add-announcement.module';
 import { AnnouncementModule } from './pages/announcement/announcement.module';
 import { HomeModule } from './pages/home/home.module';
-import { UsatoModule } from './pages/usato/usato.module';
 import { ModalModule } from './modal/modal.module';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { UsedModule } from './pages/used/used.module';
 
 @NgModule({
   declarations: [AppComponent, NotFoundComponent],
@@ -30,8 +30,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     AddAnnouncementModule,
     AnnouncementModule,
     HomeModule,
-    UsatoModule,
     ModalModule,
+    UsedModule,
   ],
 })
 export class AppModule {}

@@ -3,10 +3,10 @@ import { Used } from 'src/app/interfaces/used';
 import { UsedCarApiService } from 'src/app/services/used-car-api.service';
 
 @Component({
-  templateUrl: './usato.page.html',
-  styleUrls: ['./usato.page.scss'],
+  templateUrl: './used.page.html',
+  styleUrls: ['./used.page.scss'],
 })
-export class UsatoPage implements OnInit {
+export class UsedPage implements OnInit {
   constructor(private usedCarApiService: UsedCarApiService) {}
   carList!: Used[];
   carDetails?: Used;
