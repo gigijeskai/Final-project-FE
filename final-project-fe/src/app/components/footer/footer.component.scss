@@ -9,3 +9,33 @@
 h5:hover{
   color: orange;
 }
+
+
+
+// media query
+
+@media only screen and (max-width: 376px) and (min-width: 359px)  {
+ footer{ margin-bottom: 10rem};
+}
+@media only screen and (max-width: 415px) and (min-width: 411px)  {
+ footer{ margin-bottom: 21rem};
+}
+@media only screen and (max-width: 394px) and (min-width: 389px)  {
+ footer{ margin-bottom: 21rem};
+}
+@media only screen and (max-width: 712px) and (min-width: 711px)  {
+ footer{ margin-bottom: 39rem};
+}
+@media only screen and (max-width: 768px) and (min-width: 767px)  {
+ footer{ margin-bottom: 30rem};
+}
+@media only screen and (max-width: 821px) and (min-width: 820px)  {
+ footer{ margin-bottom: 40rem};
+}
+@media only screen and (max-width: 915px) and (min-width: 912px)  {
+ footer{ margin-bottom: 53rem};
+}
+@media only screen and (max-width: 1025px) and (min-width: 1024px)  {
+ footer{ margin-bottom: 5rem};
+}
+

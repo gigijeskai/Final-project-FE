@@ -21,6 +21,7 @@
 
       <div class="modal-body">
         <img
+          id="car-image"
           src="{{ dettagliAuto?.immagini }}"
           alt="{{ dettagliAuto?.marca }} {{ dettagliAuto?.modello }}"
         />
@@ -136,7 +137,11 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+        <button
+          type="button"
+          class="btn btn-primary mb-5"
+          data-bs-dismiss="modal"
+        >
           ok
         </button>
       </div>
