@@ -31,7 +31,7 @@ Per questo progetto sono state utilizzate le seguenti tecnologie:
 
 ## Installazione
 
-Per utilizzare l'applicazione clonare la repository  [final-project-fe](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
+Per utilizzare l'applicazione clonare la repository  [final-project-fe](https://github.com/gigijeskai/final-project-fe)
 ```
 $ git clone https://example.com
 ```
