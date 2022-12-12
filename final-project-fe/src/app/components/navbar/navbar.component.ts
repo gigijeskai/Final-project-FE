@@ -24,6 +24,6 @@ export class NavbarComponent implements OnInit {
     }
     return setTimeout(() => {
       this.isAlert = false;
-    }, 5000);
+    }, 1500);
   }
 }

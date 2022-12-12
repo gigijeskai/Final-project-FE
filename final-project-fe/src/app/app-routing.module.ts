@@ -20,16 +20,16 @@ const routes: Routes = [
     component: HomePage,
   },
   {
-    path: 'annunci',
+    path: 'announcement',
     component: AnnouncementPage,
   },
   {
-    path: 'pubblica-annuncio',
+    path: 'post-announcement',
     component: AddAnnouncementPage,
     canActivate: [AuthGuard],
   },
   {
-    path: 'usato',
+    path: 'used',
     component: UsedPage,
   },
   {
@@ -40,11 +40,11 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'accedi',
+    path: 'login',
     component: LoginPage,
   },
   {
-    path: 'registrati',
+    path: 'signup',
     component: RegisterPage,
   },
   { path: '404', component: NotFoundComponent },
