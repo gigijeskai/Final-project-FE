@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './auth/auth.guard';
 import { LoginPage } from './auth/login/login.page';
 import { RegisterPage } from './auth/register/register.page';
-import { NotFoundComponent } from './not-found/not-found.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 import { AddAnnouncementPage } from './pages/add-announcement/add-announcement.page';
 import { AnnouncementPage } from './pages/announcement/announcement.page';
 import { HomePage } from './pages/home/home.page';

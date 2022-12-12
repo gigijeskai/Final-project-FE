@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DettagliAutoNoleggioComponent } from './dettagli-auto-noleggio/dettagli-auto-noleggio.component';
-import { DettagliAutoVenditaComponent } from './dettagli-auto-vendita/dettagli-auto-vendita.component';
+import { DetailCarRentalComponent } from './detail-car-rental/detail-car-rental';
+import { DetailCarSaleComponent } from './detail-car-sale/detail-car-sale';
 
 @NgModule({
-  declarations: [DettagliAutoNoleggioComponent, DettagliAutoVenditaComponent],
+  declarations: [DetailCarRentalComponent, DetailCarSaleComponent],
   imports: [CommonModule],
-  exports: [DettagliAutoNoleggioComponent, DettagliAutoVenditaComponent],
+  exports: [DetailCarRentalComponent, DetailCarSaleComponent],
 })
 export class ModalModule {}

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Usato } from 'src/app/interfaces/usato';
+import { Used } from 'src/app/interfaces/used';
 import { UsedCarApiService } from 'src/app/services/used-car-api.service';
 
 @Component({
@@ -8,17 +8,17 @@ import { UsedCarApiService } from 'src/app/services/used-car-api.service';
 })
 export class UsatoPage implements OnInit {
   constructor(private usedCarApiService: UsedCarApiService) {}
-  carList!: Usato[];
-  carDetails?: Usato;
+  carList!: Used[];
+  carDetails?: Used;
   searchText: string = '';
 
   ngOnInit(): void {
     this.usedCarApiService.getAllCar().subscribe(
-      (data: Usato[]) => (this.carList = data),
+      (data: Used[]) => (this.carList = data),
       (error) => alert('  ERROR:503 Service Unavailable')
     );
   }
-  onDetails(item: Usato) {
+  onDetails(item: Used) {
     this.carDetails = item;
     console.log(this.carDetails);
   }
@@ -26,7 +26,7 @@ export class UsatoPage implements OnInit {
     this.searchText = searchValue;
     console.log(this.searchText);
   }
-  pay(prezzo: Usato) {
+  pay(prezzo: Used) {
     var handler = (<any>window).StripeCheckout.configure({
       key: 'pk_test_51MBb5SH7ocw78Ezlyf2imJT8xBmMBbMY7c8jVTRb1EBrtAPjkkPjbDxmlSl6dXyKTurtxsZLonH16N9MnGistTMP00Lf6vyuOy',
       locale: 'auto',

@@ -1,4 +1,4 @@
-export interface Usato {
+export interface Used {
   posti: string;
   cambio: string;
   alimentazione: string;

@@ -3,11 +3,11 @@ import { Announcement } from 'src/app/interfaces/announcement';
 import { AnnouncementService } from 'src/app/services/announcementSrv';
 
 @Component({
-  selector: 'app-dettagli-auto-noleggio',
-  templateUrl: './dettagli-auto-noleggio.component.html',
-  styleUrls: ['./dettagli-auto-noleggio.component.scss'],
+  selector: 'app-detail-car-rental',
+  templateUrl: './detail-car-rental.html',
+  styleUrls: ['./detail-car-rental.scss'],
 })
-export class DettagliAutoNoleggioComponent implements OnInit {
+export class DetailCarRentalComponent implements OnInit {
   @Input() dettagliAuto: Announcement | undefined;
 
   constructor(private announcementSrv: AnnouncementService) {}
