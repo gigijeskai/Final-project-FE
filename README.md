@@ -31,14 +31,29 @@ Per questo progetto sono state utilizzate le seguenti tecnologie:
 
 ## Installazione
 
-Per utilizzare l'applicazione clonare la repository  [final-project-fe](https://github.com/gigijeskai/final-project-fe)
+1. Per avere il codice funzionante, bisogna avere installato Node.js, npm(Package Manager), Angular, Sass, e MongoDB
+
+2. Per utilizzare l'applicazione clonare la repository  [final-project-fe](https://github.com/gigijeskai/final-project-fe) e installare i `node_modules` con il seguente comando dal terminale:
 ```
-$ git clone https://example.com
+$ npm i
 ```
-lalalallala
+
+3. Da terminale, lanciare il `db.json` con il seguente comando:
 ```
-$ cd ../path/to/the/file
-$ npm install
+$ json-server db.json -m ./node_modules/json-server-auth
+```
+
+4. Dalla directory  `node-express-mongodb` aggiungere il file `cars.json` nel MongoDB del proprio device, 
+aprire un secondo terminale e lanciare il seguente comando:
+```
 $ npm start
 ```
-Side information: To use the application in a special environment use ```lorem ipsum``` to start
+
+5.Per visualizzare sul proprio browser l'applicazione, aprire un terzo terminale e lanciare il seguente comando:
+```
+$ ng serve 
+```
+
+
+
+
