@@ -21,7 +21,6 @@ export class AuthService {
   signIn(userObj: User) {
     return this.http.post(environment.urlAPI + 'login', userObj).pipe(
       tap((data) => {
-        console.log(data);
         this.isLogged = data as UserToken;
         this.isLogin = true;
       })
