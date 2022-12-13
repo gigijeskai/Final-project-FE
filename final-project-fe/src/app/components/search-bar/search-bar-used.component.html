@@ -1,0 +1,30 @@
+<div class="container-fluid my-5 d-flex justify-content-center shadow-lg">
+  <div class="row d-flex justify-content-around form-control">
+    <div class="col-sm-4 col-12 mb-sm-0 mb-2 form-floating">
+      <input
+        id="floatingInput"
+        placeholder="Dove?"
+        class="form-control"
+        type="text"
+        aria-label="Search"
+        name="searchBar"
+        [(ngModel)]="enteredSerchValue"
+        (input)="onSearchTextChanged()"
+      />
+      <label class="text-center" for="floatingInput">Dove?</label>
+    </div>
+    <div class="col-sm-4 col-12 mb-sm-0 mb-2 form-floating">
+      <input
+        id="floatingInput"
+        placeholder="prezzo"
+        class="form-control"
+        type="number"
+        aria-label="Search"
+        name="searchBar"
+        [(ngModel)]="enteredSerchValue"
+        (input)="onSearchTextChanged()"
+      />
+      <label class="text-center" for="floatingInput">Prezzo</label>
+    </div>
+  </div>
+</div>
