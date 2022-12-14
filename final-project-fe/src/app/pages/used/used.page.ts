@@ -17,6 +17,7 @@ export class UsedPage implements OnInit {
       (data: Used[]) => (this.carList = data),
       (error) => alert('  ERROR:503 Service Unavailable')
     );
+    console.log(this.carList);
   }
   onDetails(item: Used) {
     this.carDetails = item;
@@ -24,7 +25,6 @@ export class UsedPage implements OnInit {
   }
   onSearchTextEntered(searchValue: string) {
     this.searchText = searchValue;
-    console.log(searchValue);
   }
   pay(prezzo: Used) {
     var handler = (<any>window).StripeCheckout.configure({
