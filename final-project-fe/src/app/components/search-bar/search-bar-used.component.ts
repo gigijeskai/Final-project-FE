@@ -10,10 +10,14 @@ export class SearchBarUsedComponent implements OnInit {
 
   ngOnInit(): void {}
   enteredSerchValue: string = '';
+  enteredSerchPriceValue: string = '';
 
   @Output()
   searchTextChanged: EventEmitter<string> = new EventEmitter<string>();
 
+  onSearchPriceChanged() {
+    this.searchTextChanged.emit(this.enteredSerchPriceValue);
+  }
   onSearchTextChanged() {
     this.searchTextChanged.emit(this.enteredSerchValue);
   }

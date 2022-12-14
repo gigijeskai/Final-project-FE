@@ -8,7 +8,9 @@
     <ng-container *ngFor="let item of this.carList, let i = index">
       <div
         class="col-md-6 col-lg-4 col-12 d-flex align-items-stretch shadow-sm"
-        *ngIf="searchText === '' || item.citta.toLowerCase().includes(searchText) || item.citta.toUpperCase().includes(searchText)"
+        *ngIf="searchText === ''
+        || item.citta.toLowerCase().includes(searchText)
+        ||item.citta.toUpperCase().includes(searchText) "
       >
         <div class="card my-3 d-flex">
           <img

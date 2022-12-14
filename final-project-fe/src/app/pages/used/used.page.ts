@@ -24,6 +24,7 @@ export class UsedPage implements OnInit {
   }
   onSearchTextEntered(searchValue: string) {
     this.searchText = searchValue;
+    console.log(searchValue);
   }
   pay(prezzo: Used) {
     var handler = (<any>window).StripeCheckout.configure({
