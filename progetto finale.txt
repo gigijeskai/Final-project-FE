@@ -1,0 +1,13 @@
+Cose da fare per completare la prima versione del progetto:
+
+- Aggiungere dei filtri nella searchbar
+- Aggiungere il periodo di disponibilità di un annuncio
+
+- testare l'applicazione
+- fare la build
+
+
+
+
+
+
