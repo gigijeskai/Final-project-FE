@@ -15,8 +15,16 @@
             type="email"
             class="form-control"
             id="email"
+            #email="ngModel"
             required
           />
+          <div
+            *ngIf="email.invalid && email.touched"
+            class="alert alert-danger"
+            role="alert"
+          >
+            Devi compilare questo campo!
+          </div>
         </div>
         <div class="mb-3">
           <label for="password" class="form-label">Password</label>
@@ -26,8 +34,16 @@
             type="password"
             class="form-control"
             id="password"
+            #password="ngModel"
             required
           />
+          <div
+            *ngIf="password.invalid && password.touched"
+            class="alert alert-danger"
+            role="alert"
+          >
+            Devi compilare questo campo!
+          </div>
         </div>
         <button type="submit" class="btn mt-3 col-12" [disabled]="!f.valid">
           Accedi
