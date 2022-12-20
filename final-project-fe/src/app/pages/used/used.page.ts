@@ -17,11 +17,9 @@ export class UsedPage implements OnInit {
       (data: Used[]) => (this.carList = data),
       (error) => alert('  ERROR:503 Service Unavailable')
     );
-    console.log(this.carList);
   }
   onDetails(item: Used) {
     this.carDetails = item;
-    console.log(this.carDetails);
   }
   onSearchTextEntered(searchValue: string) {
     this.searchText = searchValue;
@@ -44,8 +42,8 @@ export class UsedPage implements OnInit {
       amount: prezzo,
     });
   }
-  deleteCar(id: number) {
-    this.usedCarApiService.deleteCar(id).subscribe();
-    this.carList?.splice(id, 1);
+  deleteCar(i: number) {
+    this.usedCarApiService.deleteCar(i).subscribe();
+    this.carList?.splice(i, 1);
   }
 }
