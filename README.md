@@ -20,7 +20,7 @@ Le vetture in vendita provengono da delle API che ho scritto e inserito in un da
 
 ## Tecnologie
 
-Per questo progetto sono state utilizzate e sono necessarie per il corretto utilizzo le seguenti tecnologie:
+Per questo progetto sono state utilizzate ed è necessaria l'installazione per il corretto utilizzo delle seguenti tecnologie:
 
 * [Angular](https://angular.io/): Version 14.2 
 * [Node](https://nodejs.org/it/docs/): Version 16.17
