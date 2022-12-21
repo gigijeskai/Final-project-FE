@@ -50,26 +50,6 @@
       "id": 1
     },
     {
-      "marca": "Kia",
-      "modello": "Sportage",
-      "porte": 5,
-      "posti": 5,
-      "tipologia": "Suv/Fuoristrada",
-      "colore": "Rosso",
-      "alimentazione": "Diesel",
-      "immagini": "https://www.autoasiago.it/wp-content/uploads/2021/11/usate-auto.png",
-      "mese": "11",
-      "anno": 2019,
-      "consumo": 25,
-      "km": 33,
-      "cv": 120,
-      "cilindrata": 1.6,
-      "cambio": "Manuale",
-      "citta": "Bergamo",
-      "prezzo": 40,
-      "id": 2
-    },
-    {
       "marca": "Fiat",
       "modello": "Tipo",
       "porte": 5,
@@ -87,7 +67,7 @@
       "cambio": "Manuale",
       "citta": "Milano",
       "prezzo": 30,
-      "id": 3
+      "id": 2
     },
     {
       "marca": "Audi",
@@ -107,7 +87,7 @@
       "cambio": "Automatico",
       "citta": "Latina",
       "prezzo": 80,
-      "id": 4
+      "id": 3
     },
     {
       "marca": "Alfa romeo",
@@ -127,7 +107,7 @@
       "cambio": "Automatico",
       "citta": "Firenze",
       "prezzo": 35,
-      "id": 5
+      "id": 4
     },
     {
       "marca": "Mini",
@@ -147,7 +127,7 @@
       "cambio": "Manuale",
       "citta": "Latina",
       "prezzo": 30,
-      "id": 6
+      "id": 5
     }
   ]
 }
