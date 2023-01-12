@@ -20,10 +20,7 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div
-        class="collapse navbar-collapse justify-content-center"
-        id="navbarNav"
-      >
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a
@@ -70,8 +67,7 @@
             >
           </li>
         </ul>
-      </div>
-      <div class="col-md-3 text-end">
+
         <div class="" *ngIf="this.authService.isLogin">
           <b> Ciao, {{ this.authService.isLogged.user?.firstname }}</b>
           <button class="logOut" (click)="logout()">Logout</button>

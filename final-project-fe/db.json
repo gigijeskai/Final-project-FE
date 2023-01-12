@@ -26,6 +26,15 @@
       "age": "12",
       "citta": "Bergamo",
       "id": 3
+    },
+    {
+      "email": "luigindaco@gmail.com",
+      "password": "$2a$10$kLfG2zMgm0pXECGsYsQYSuCxNqplb3FO2c7aG59IwWlox5BxScipK",
+      "firstname": "Luigi",
+      "lastname": "Indaco",
+      "age": "26",
+      "citta": "Latina",
+      "id": 4
     }
   ],
   "annunci": [
