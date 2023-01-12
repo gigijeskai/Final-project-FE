@@ -17,47 +17,9 @@
       "age": "34",
       "citta": "Pozzuoli",
       "id": 2
-    },
-    {
-      "email": "prova@gmail.com",
-      "password": "$2a$10$AyoZyjy/5mECL2o60aJYf.bqmd.6.Ll6ciIxvkWopDWWuTK/LzDSS",
-      "firstname": "prova",
-      "lastname": "gmail",
-      "age": "12",
-      "citta": "Bergamo",
-      "id": 3
-    },
-    {
-      "email": "luigindaco@gmail.com",
-      "password": "$2a$10$kLfG2zMgm0pXECGsYsQYSuCxNqplb3FO2c7aG59IwWlox5BxScipK",
-      "firstname": "Luigi",
-      "lastname": "Indaco",
-      "age": "26",
-      "citta": "Latina",
-      "id": 4
     }
   ],
   "annunci": [
-    {
-      "posti": 5,
-      "cambio": "Manuale",
-      "alimentazione": "Diesel",
-      "consumo": 4,
-      "citta": "Roma",
-      "prezzo": 45,
-      "marca": "Bmw",
-      "modello": "320d",
-      "tipologia": "Berlina",
-      "anno": 2016,
-      "mese": 11,
-      "immagini": "https://auto1-homepage.prod.mp.auto1.cloud/static/optimized/blue-car-hp-left-bmw.png",
-      "colore": "Blu",
-      "porte": 5,
-      "km": 120,
-      "cv": 180,
-      "cc": 2.5,
-      "id": 1
-    },
     {
       "marca": "Fiat",
       "modello": "Tipo",
@@ -76,7 +38,7 @@
       "cambio": "Manuale",
       "citta": "Milano",
       "prezzo": 30,
-      "id": 2
+      "id": 1
     },
     {
       "marca": "Audi",
@@ -96,7 +58,7 @@
       "cambio": "Automatico",
       "citta": "Latina",
       "prezzo": 80,
-      "id": 3
+      "id": 2
     },
     {
       "marca": "Alfa romeo",
@@ -116,7 +78,7 @@
       "cambio": "Automatico",
       "citta": "Firenze",
       "prezzo": 35,
-      "id": 4
+      "id": 3
     },
     {
       "marca": "Mini",
@@ -136,7 +98,7 @@
       "cambio": "Manuale",
       "citta": "Latina",
       "prezzo": 30,
-      "id": 5
+      "id": 4
     }
   ]
 }
