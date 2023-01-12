@@ -17,6 +17,15 @@
       "age": "34",
       "citta": "Pozzuoli",
       "id": 2
+    },
+    {
+      "email": "luigindaco@gmail.com",
+      "password": "$2a$10$G5P8U52qRDu92MPO5BYMKu26niewmO/3WsqyirbSDPBQ7zkQvC45C",
+      "firstname": "Luigi",
+      "lastname": "Indaco",
+      "age": "26",
+      "citta": "Latina",
+      "id": 3
     }
   ],
   "annunci": [
